@@ -30,36 +30,36 @@ Category: news
 
 <div class="flex">
     <div class="date_box">
-        <p>Aug 2023</p>
+        <p>Oct 2022</p>
     </div>
     <span>
-        Paper accepted at NeurIPS workshop.
+        Our paper "Learning Invariance Manifolds of Visual Sensory Neurons" is accepted at NeurIPS 2022 Workshop NeurReps. Led jointly with Luca Baroni.
     </span>
 </div>
 
 <div class="flex">
     <div class="date_box">
-        <p>Aug 2023</p>
+        <p>Oct 2022</p>
     </div>
     <span>
-        4-page paper accepted at NeurIPS workshop.
+        Our 4-page extended abstract on "Bayesian Oracle for bounding information gain in neural encoding models" got accepted at NeurIPS 2022 Workshop InfoCog. Led jointly with Konstantin Lurz.
     </span>
 </div>
 
 <div class="flex">
     <div class="date_box">
-        <p>Aug 2023</p>
+        <p>Sep 2023</p>
     </div>
     <span>
-        Competition accepted at NeurIPS.
+        Our crash course "An Introduction to Machine Learning" is not availabe <a style="color: #00CBB0;text-decoration: none;" href="https://ibehave.nrw/ibots-platform/about-ibots/">on YouTube</a>. Co-created with Arne Nix.
     </span>
 </div>
 
 <div class="flex">
     <div class="date_box">
-        <p>Aug 2023</p>
+        <p>May 2022</p>
     </div>
     <span>
-        Course is out.
+        Our Sensorium competition "on predicting large-scale mouse primary visual cortex activity" got accepted at NeurIPS 2022. Co-organized with Konstantin Willeke and many other colleagues.
     </span>
 </div>

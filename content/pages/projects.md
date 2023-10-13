@@ -1,4 +1,4 @@
 Title: Projects
 Category: projects
 
-Projects here
+Coming soon..
