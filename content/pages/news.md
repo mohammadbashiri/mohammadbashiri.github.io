@@ -48,7 +48,7 @@ Category: news
 
 <div class="flex">
     <div class="date_box">
-        <p>Sep 2023</p>
+        <p>Sep 2022</p>
     </div>
     <span>
         Our crash course "An Introduction to Machine Learning" is not availabe <a style="color: #00CBB0;text-decoration: none;" href="https://ibehave.nrw/ibots-platform/about-ibots/">on YouTube</a>. Co-created with Arne Nix.
