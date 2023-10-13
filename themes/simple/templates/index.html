@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="main">
+<div class="left">
+    <div id="header">
+        <div id="name">{{ AUTHOR }}</div>
+        <div id="social-media">
+            <a href="mailto:your-email@example.com" target="_blank"><img id="email-icon" src="{{ SITEURL }}/theme/images/email_icon_light.png"></a>
+            <a href="https://github.com/yourusername" target="_blank"><img id="github-icon" src="{{ SITEURL }}/theme/images/github_icon_light.png"></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><img id="twitter-icon" src="{{ SITEURL }}/theme/images/twitter_icon_light.png"></a>
+        </div>
+    </div>
+<!-- <p>Here is some dummy text to act as a placeholder for your description.</p> -->
+<div id="about">
+    {% for page in pages if page.category == 'about' %}
+        <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{{ content }}
+</div>
+<div class="right"><img src="{{ SITEURL }}/theme/images/my_picture.jpg"></div>
+</div>
+{% endblock %}
+{% block news %}
+<div id="news">
+    {% for page in pages if page.category == 'news' %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block publications %}
+<div id="publications">
+    {% for page in pages if page.category == 'publications' %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %} 
+{% block projects %}
+<div id="projects">
+    {% for page in pages if page.category == 'projects' %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block teaching %}
+<div id="teaching">
+    {% for page in pages if page.category == 'teaching' %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

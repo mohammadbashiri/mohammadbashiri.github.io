@@ -1,0 +1,11 @@
+# development env
+ipython
+ipdb
+
+# for tests
+pytest      # Unit test
+pytest-bdd  # BDD
+pytest-cov  # code coverage
+behave      # BDD
+mypy        # type checking
+mutmut      # mutation testing
