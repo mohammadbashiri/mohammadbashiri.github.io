@@ -24,7 +24,7 @@ Category: news
         <p>Jan 2023</p>
     </div>
     <span>
-        My paper with Konstantin Lurz "Bayesian Oracle for bounding information gain in neural encoding models" is accepted at ICLR 2023.
+        Joint work with Konstantin Lurz "Bayesian Oracle for bounding information gain in neural encoding models" is accepted at ICLR 2023.
     </span>
 </div>
 
