@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            const image = document.querySelector("#main img");
+            const news = document.getElementById("news");
+            const emailIcon = document.getElementById("email-icon");
+            const githubIcon = document.getElementById("github-icon");
+            const twitterIcon = document.getElementById("twitter-icon");
+            const darkModeIcon = document.getElementById("dark-mode-icon");
+
+            body.classList.toggle("dark-mode");
+            image.classList.toggle("dark-mode");
+            
+            
+            const darkModeEnabled = body.classList.contains("dark-mode");
+            
+            // Set opacity to 0 before changing source
+            emailIcon.style.opacity = 0;
+            githubIcon.style.opacity = 0;
+            twitterIcon.style.opacity = 0;
+            darkModeIcon.style.opacity = 0;
+    
+            // Change source and then set opacity back to 1
+            setTimeout(() => {
+                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
+                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
+                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
+                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
+
+                emailIcon.style.opacity = 1;
+                githubIcon.style.opacity = 1;
+                twitterIcon.style.opacity = 1;
+                darkModeIcon.style.opacity = 1;
+            }, 150);  // 0.5 seconds, to match the transition duration
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Dark Mode Toggle Icon -->
+        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+        </div>
+    <h1>Teaching</h1>
+    
+
+    <p><strong>iBOTS Workshop: Intro to Data Analysis with Python and Pandas</strong><br>
+<em>Led by Mohammad Bashiri</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/Nov_2023_(in_prep)-666666.svg"></p>
+<p><strong>Crash Course: An Introduction to Machine Learning</strong><br>
+<em>Arne Nix and Mohammad Bashiri</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/Sep_2022-666666.svg">
+<a href="https://youtube.com/playlist?list=PLyo4bHRa2OKK_a_PdN7Dgc9VSSji8c1EO&amp;si=3stQ963mthwac-Yl"><img alt="Generic badge" src="https://img.shields.io/badge/YouTube_Playlist-E80000.svg"></a></p>
+
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+    </div>
+</body>
+</html>

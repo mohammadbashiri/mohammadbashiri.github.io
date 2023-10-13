@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            const image = document.querySelector("#main img");
+            const news = document.getElementById("news");
+            const emailIcon = document.getElementById("email-icon");
+            const githubIcon = document.getElementById("github-icon");
+            const twitterIcon = document.getElementById("twitter-icon");
+            const darkModeIcon = document.getElementById("dark-mode-icon");
+
+            body.classList.toggle("dark-mode");
+            image.classList.toggle("dark-mode");
+            
+            
+            const darkModeEnabled = body.classList.contains("dark-mode");
+            
+            // Set opacity to 0 before changing source
+            emailIcon.style.opacity = 0;
+            githubIcon.style.opacity = 0;
+            twitterIcon.style.opacity = 0;
+            darkModeIcon.style.opacity = 0;
+    
+            // Change source and then set opacity back to 1
+            setTimeout(() => {
+                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
+                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
+                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
+                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
+
+                emailIcon.style.opacity = 1;
+                githubIcon.style.opacity = 1;
+                twitterIcon.style.opacity = 1;
+                darkModeIcon.style.opacity = 1;
+            }, 150);  // 0.5 seconds, to match the transition duration
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Dark Mode Toggle Icon -->
+        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+        </div>
+<div id="main">
+<div class="left">
+    <div id="header">
+        <div id="name">Mohammad Bashiri</div>
+        <div id="social-media">
+            <a href="mailto:your-email@example.com" target="_blank"><img id="email-icon" src="/theme/images/email_icon_light.png"></a>
+            <a href="https://github.com/yourusername" target="_blank"><img id="github-icon" src="/theme/images/github_icon_light.png"></a>
+            <a href="https://twitter.com/yourusername" target="_blank"><img id="twitter-icon" src="/theme/images/twitter_icon_light.png"></a>
+        </div>
+    </div>
+<!-- <p>Here is some dummy text to act as a placeholder for your description.</p> -->
+<div id="about">
+        <p><p>I did my PhD at the intersection of <strong>Computational Neuroscience and Machine Learning</strong>, working with <a style="color: #00CBB0;text-decoration: none;" href="https://sinzlab.org/people/fabian_sinz.html">Fabian Sinz</a>, where I used deep neural networks, latent variable models, and implicit neural representations, driving insights about functional properties of visual sensory areas.</p>
+<p>Before my PhD, I did my bachelors in Electrical and Electronics Engineering, in Malaysia, and then moved to Munich to pursue my masters in Neuroengineering at TU Munich.</p>
+<p>Leveraging this multidisciplinary background, I've recently joined the <a style="color: #00CBB0;text-decoration: none;" href="https://ibehave.nrw/">iBehave Network</a> to taken on a practical role aimed at bridging the gap between academic research and applied solutions. 
+As core members of the <a style="color: #00CBB0;text-decoration: none;" href="https://ibehave.nrw/ibots-platform/about-ibots/">iBOTS facilitation group</a>, we drive tech innovations and knowledge transfer across many neuroscience labs. We focus on <strong>research software development</strong>, as well as running <strong>training</strong> sessions and <strong>community events</strong> to foster collaboration and knowledge sharing, thereby improving both scientific research and technical skills across various academic levels.</p></p>
+</div>
+
+</div>
+<div class="right"><img src="/theme/images/my_picture.jpg"></div>
+</div>
+        <hr style="width: 94%; margin: auto;">
+<div id="news">
+    <h2>News</h2>
+    <p><div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        I have joined the iBOTS group in the iBehave Network as a Research Software Engineer/Consultant.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        Our workshop "How can Machine Learning generate insights and theories in Neuroscience" is accepted at BCCN 2023. Led by Michaela Vystrčilová and myself. It's going to take place in Berlin on the 26th and 27th of September.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Jan 2023</p>
+    </div>
+    <span>
+        My paper with Konstantin Lurz "Bayesian Oracle for bounding information gain in neural encoding models" is accepted at ICLR 2023.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        Paper accepted at NeurIPS workshop.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        4-page paper accepted at NeurIPS workshop.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        Competition accepted at NeurIPS.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Aug 2023</p>
+    </div>
+    <span>
+        Course is out.
+    </span>
+</div></p>
+</div>
+        <hr style="width: 94%; margin: auto;">
+<div id="publications">
+    <h2>Publications</h2>
+    <p><p><strong>A flow-based latent state generative model of neural population responses to natural images</strong><br>
+<em>Mohammad Bashiri, Edgar Walker, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/2021-666666.svg">
+<img alt="Generic badge" src="https://img.shields.io/badge/NeurIPS_(spotlight)-A000D1.svg">
+<a href="https://openreview.net/forum?id=1yeYYtLqq7K"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
+<a href="https://github.com/sinzlab/bashiri-et-al-2021"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
+<a href="https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl"><img alt="Generic badge" src="https://img.shields.io/badge/teaser-AB5F1E.svg"></a>
+<a href="https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i"><img alt="Generic badge" src="https://img.shields.io/badge/talk-AB1E6A.svg"></a></p>
+<p>For a complete list of publications check out <a style="color: #00CBB0;text-decoration: none;" href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">my Google Scholar profile</a>.</p></p>
+</div>
+        <hr style="width: 94%; margin: auto;">
+<div id="projects">
+    <h2>Projects</h2>
+    <p><p>Projects here</p></p>
+</div>
+        <hr style="width: 94%; margin: auto;">
+<div id="teaching">
+    <h2>Teaching</h2>
+    <p><p><strong>iBOTS Workshop: Intro to Data Analysis with Python and Pandas</strong><br>
+<em>Led by Mohammad Bashiri</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/Nov_2023_(in_prep)-666666.svg"></p>
+<p><strong>Crash Course: An Introduction to Machine Learning</strong><br>
+<em>Arne Nix and Mohammad Bashiri</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/Sep_2022-666666.svg">
+<a href="https://youtube.com/playlist?list=PLyo4bHRa2OKK_a_PdN7Dgc9VSSji8c1EO&amp;si=3stQ963mthwac-Yl"><img alt="Generic badge" src="https://img.shields.io/badge/YouTube_Playlist-E80000.svg"></a></p></p>
+</div>
+    </div>
+</body>
+</html>

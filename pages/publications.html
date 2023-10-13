@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            const image = document.querySelector("#main img");
+            const news = document.getElementById("news");
+            const emailIcon = document.getElementById("email-icon");
+            const githubIcon = document.getElementById("github-icon");
+            const twitterIcon = document.getElementById("twitter-icon");
+            const darkModeIcon = document.getElementById("dark-mode-icon");
+
+            body.classList.toggle("dark-mode");
+            image.classList.toggle("dark-mode");
+            
+            
+            const darkModeEnabled = body.classList.contains("dark-mode");
+            
+            // Set opacity to 0 before changing source
+            emailIcon.style.opacity = 0;
+            githubIcon.style.opacity = 0;
+            twitterIcon.style.opacity = 0;
+            darkModeIcon.style.opacity = 0;
+    
+            // Change source and then set opacity back to 1
+            setTimeout(() => {
+                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
+                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
+                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
+                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
+
+                emailIcon.style.opacity = 1;
+                githubIcon.style.opacity = 1;
+                twitterIcon.style.opacity = 1;
+                darkModeIcon.style.opacity = 1;
+            }, 150);  // 0.5 seconds, to match the transition duration
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <!-- Dark Mode Toggle Icon -->
+        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+        </div>
+    <h1>Publications</h1>
+    
+
+    <p><strong>A flow-based latent state generative model of neural population responses to natural images</strong><br>
+<em>Mohammad Bashiri, Edgar Walker, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz</em><br>
+<img alt="Generic badge" src="https://img.shields.io/badge/2021-666666.svg">
+<img alt="Generic badge" src="https://img.shields.io/badge/NeurIPS_(spotlight)-A000D1.svg">
+<a href="https://openreview.net/forum?id=1yeYYtLqq7K"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
+<a href="https://github.com/sinzlab/bashiri-et-al-2021"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
+<a href="https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl"><img alt="Generic badge" src="https://img.shields.io/badge/teaser-AB5F1E.svg"></a>
+<a href="https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i"><img alt="Generic badge" src="https://img.shields.io/badge/talk-AB1E6A.svg"></a></p>
+<p>For a complete list of publications check out <a style="color: #00CBB0;text-decoration: none;" href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">my Google Scholar profile</a>.</p>
+
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+        <hr style="width: 94%; margin: auto;">
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+#container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+}
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+#dark-mode-toggle img {
+    width: 24px;
+    cursor: pointer;
+}
+/* #dark-mode-icon {
+    transition: opacity 0.5s ease;
+} */
+#main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    /* transition: background-color 0.5s ease, color 0.5s ease; */
+}
+#main .right img {
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin: 20px;
+    border-color: black;
+    transition: border-color 0.5s ease;
+}
+#main .left {
+    flex: 1;
+}
+#main .right {
+    flex: 0 0 300px;
+}
+#name {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#header {
+    display: flex;
+    align-items: center;
+}
+#social-media img {
+    width: 24px;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: opacity 0.5s ease;
+}
+#social-media {
+    float: left;
+    text-align: left;
+    padding: 0 2em;
+    margin-left: -20px;
+    margin-bottom: 15px;
+}
+#news {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
+#publications {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
+#projects {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
+#teaching {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    #main {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #main .left, #main .right {
+        width: 100%;
+    }
+    #main img {
+        width: 200px;
+    }
+}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+#main.dark-mode {
+    background-color: #121212;
+}
+/* #main img.dark-mode {
+    border-color: #ffffff;
+} */
+body.dark-mode #main .right img {
+    border-color: white;
+}
+#news.dark-mode {
+    color: #ffffff;
+}
+#publications.dark-mode {
+    color: #ffffff;
+}
+#projects.dark-mode {
+    color: #ffffff;
+}
+#teaching.dark-mode {
+    color: #ffffff;
+}
+
+.date_box {
+    display: inline-block;
+    background-color: #666666;
+    /* padding: 10px;  optional, adjust as needed */
+    border-radius: 5px;
+    border: 0px solid black;
+    margin-right: 8px;
+    font-size: 9pt;
+    color: white;
+    white-space: nowrap;
+}
+
+.date_box p {
+    margin: 4px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;  /* This will vertically align items if they have different heights */
+    margin: 14px 0px 14px 0px;  /* top right bottom left */
+}
