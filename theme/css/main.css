@@ -76,6 +76,10 @@ body {
     margin: 2em;
     transition: background-color 0.5s ease;
 }
+#events {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
 #teaching {
     margin: 2em;
     transition: background-color 0.5s ease;
@@ -114,6 +118,9 @@ body.dark-mode #main .right img {
     color: #ffffff;
 }
 #projects.dark-mode {
+    color: #ffffff;
+}
+#events.dark-mode {
     color: #ffffff;
 }
 #teaching.dark-mode {
