@@ -12,12 +12,12 @@ Category: teaching
 
 **Uni Course: Probabilistic Machine Learning**<br>
 *Teaching assistant*<br>
-![Generic badge](https://img.shields.io/badge/2022-666666.svg)
+![Generic badge](https://img.shields.io/badge/Sep_2022-666666.svg)
 
 **Seminar: Current Topics in Machine Learning**<br>
 *Student suprevisor*<br>
-![Generic badge](https://img.shields.io/badge/2022-666666.svg)
+![Generic badge](https://img.shields.io/badge/May_2022-666666.svg)
 
 **Uni Course: Data Science**<br>
 *Teaching assistant*<br>
-![Generic badge](https://img.shields.io/badge/2021-666666.svg)
+![Generic badge](https://img.shields.io/badge/Sep_2021-666666.svg)
