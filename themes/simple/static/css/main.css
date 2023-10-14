@@ -76,6 +76,10 @@ body {
     margin: 2em;
     transition: background-color 0.5s ease;
 }
+#events {
+    margin: 2em;
+    transition: background-color 0.5s ease;
+}
 #teaching {
     margin: 2em;
     transition: background-color 0.5s ease;
@@ -116,6 +120,9 @@ body.dark-mode #main .right img {
 #projects.dark-mode {
     color: #ffffff;
 }
+#events.dark-mode {
+    color: #ffffff;
+}
 #teaching.dark-mode {
     color: #ffffff;
 }
@@ -140,4 +147,22 @@ body.dark-mode #main .right img {
     display: flex;
     align-items: center;  /* This will vertically align items if they have different heights */
     margin: 14px 0px 14px 0px;  /* top right bottom left */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Footer Styles */
+body.dark-mode footer {
+    background-color: #121212;
+    color: #ffffff;
+    border-top: 1px solid #444;
 }

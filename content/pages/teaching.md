@@ -14,7 +14,7 @@ Category: teaching
 *Teaching assistant*<br>
 ![Generic badge](https://img.shields.io/badge/Sep_2022-666666.svg)
 
-**Seminar: Current Topics in Machine Learning**<br>
+**Uni Seminar: Current Topics in Machine Learning**<br>
 *Student suprevisor*<br>
 ![Generic badge](https://img.shields.io/badge/May_2022-666666.svg)
 

@@ -45,6 +45,14 @@
     {% endfor %}
 </div>
 {% endblock %}
+{% block events %}
+<div id="events">
+    {% for page in pages if page.category == 'events' %}
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.content }}</p>
+    {% endfor %}
+</div>
+{% endblock %}
 {% block teaching %}
 <div id="teaching">
     {% for page in pages if page.category == 'teaching' %}
