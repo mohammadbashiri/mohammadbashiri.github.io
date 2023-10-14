@@ -148,3 +148,21 @@ body.dark-mode #main .right img {
     align-items: center;  /* This will vertically align items if they have different heights */
     margin: 14px 0px 14px 0px;  /* top right bottom left */
 }
+
+/* Footer Styles */
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Footer Styles */
+body.dark-mode footer {
+    background-color: #121212;
+    color: #ffffff;
+    border-top: 1px solid #444;
+}
