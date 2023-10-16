@@ -15,7 +15,7 @@ Category: news
         <p>July 2023</p>
     </div>
     <span>
-        Had a great time talking to a group of young minds from India about myths and facts about the brain. You can find the slides <a style="color: #00CBB0;text-decoration: none;" href="https://docs.google.com/presentation/d/12wKzW90IZwIL45gEB3KWHucS0dxLrTV4JZ10kEBZvlo/edit?usp=sharing">here</a>.
+        Had a great time talking to a group of young minds from India, at <a style="color: #00CBB0;text-decoration: none;" href="https://breathingminds.in/">Breathing Minds</a>, about myths and facts about the brain. You can find the slides <a style="color: #00CBB0;text-decoration: none;" href="https://docs.google.com/presentation/d/12wKzW90IZwIL45gEB3KWHucS0dxLrTV4JZ10kEBZvlo/edit?usp=sharing">here</a>.
     </span>
 </div>
 
