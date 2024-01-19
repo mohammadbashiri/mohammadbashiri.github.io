@@ -1,4 +1,4 @@
-### Step-by-Step Instructions
+### Step-by-Step Instructions to update the website
 
 1. **Create or Update Conda Environment**:
    - Ensure you have a Conda environment set up for your project. If not already created, use the `environment.yml` file (or create one if necessary) and run:
