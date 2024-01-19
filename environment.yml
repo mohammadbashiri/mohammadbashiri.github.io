@@ -1,0 +1,9 @@
+name: mywebsite
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - pelican[markdown]
+    - ghp-import

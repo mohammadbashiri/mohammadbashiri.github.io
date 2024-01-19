@@ -2,11 +2,11 @@ Title: Teaching
 Category: teaching
 
 **iBOTS Workshop: Developing Data Analysis Projects with Python, Git, and Snakemake**<br>
-*Lead Instrctor*<br>
+*Lead Instructor*<br>
 ![Generic badge](https://img.shields.io/badge/Nov_2023-666666.svg)
 
 **iBOTS Workshop: Intro to Data Analysis with Python and Pandas**<br>
-*Lead Instrctor*<br>
+*Lead Instructor*<br>
 ![Generic badge](https://img.shields.io/badge/Nov_2023-666666.svg)
 
 **Crash Course: An Introduction to Machine Learning**<br>
