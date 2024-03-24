@@ -3,7 +3,7 @@ Category: teaching
 
 **iBOTS Workshop: Developing Data Analysis Projects with Python, Git, and Snakemake**<br>
 *Lead Instructor*<br>
-![Generic badge](https://img.shields.io/badge/Nov_2023-666666.svg)
+![Generic badge](https://img.shields.io/badge/Feb_2024-666666.svg)
 
 **iBOTS Workshop: Intro to Data Analysis with Python and Pandas**<br>
 *Lead Instructor*<br>
