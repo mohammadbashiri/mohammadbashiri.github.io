@@ -17,7 +17,7 @@ Category: events
 ![Generic badge](https://img.shields.io/badge/Role-Organizer-EB4678.svg)
 
 **<a style="color: #00CBB0;text-decoration: none;" href="https://breathingminds.in/">Breathing Minds</a> guest expert session: "Brain: Myths, Facts, and Careers"**<br>
-*German Primate Center, Göttingen*<br>
+*Online*<br>
 ![Generic badge](https://img.shields.io/badge/July_2022-666666.svg)
 ![Generic badge](https://img.shields.io/badge/Role-Invited_speaker-119C72.svg)
 
