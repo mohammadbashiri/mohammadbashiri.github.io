@@ -3,6 +3,24 @@ Category: news
 
 <div class="flex">
     <div class="date_box">
+        <p>April 2024</p>
+    </div>
+    <span>
+        I have joined <a style="color: #00CBB0;text-decoration: none;" href="https://noselab.com/">Noselab</a> as a Senior Data Scientist, working on data-driven medicine.
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
+        <p>Feb 2024</p>
+    </div>
+    <span>
+        Successfully defended my PhD with the title "Latent Variable and Implicit Models for Neural System Identification" (these can be found <a style="color: #00CBB0;text-decoration: none;" href="http://dx.doi.org/10.15496/publikation-93809">here</a>).
+    </span>
+</div>
+
+<div class="flex">
+    <div class="date_box">
         <p>Jan 2024</p>
     </div>
     <span>
