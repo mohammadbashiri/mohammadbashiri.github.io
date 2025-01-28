@@ -1,4 +1,4 @@
-Title: Publications
+Title: Selected Publications
 Category: publications
 
 **Bayesian Oracle for bounding information gain in neural encoding models**<br>
