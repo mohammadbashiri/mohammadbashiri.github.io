@@ -33,7 +33,7 @@ Category: news
         <p>Dec 2023</p>
     </div>
     <span>
-        Together with <a style="color: #00CBB0;text-decoration: none;" href="https://twitter.com/AlanaDarcher">Alana Darcher</a> we are organizing <a style="color: #00CBB0;text-decoration: none;" href="https://mlcolearn.github.io/">MLCoLearn</a>, a NeuroML Meet-Up in Bonn, starting from Feb 2024.
+        Together with <a style="color: #00CBB0;text-decoration: none;" href="https://www.linkedin.com/in/alana-darcher">Alana Darcher</a> we are organizing <a style="color: #00CBB0;text-decoration: none;" href="https://mlcolearn.github.io/">MLCoLearn</a>, a NeuroML Meet-Up in Bonn, starting from Feb 2024.
     </span>
 </div>
 

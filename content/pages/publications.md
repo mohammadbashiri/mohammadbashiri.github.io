@@ -5,7 +5,8 @@ Category: publications
 *Konstantin-Klemens Lurz <sup>\*</sup>, Mohammad Bashiri <sup>\*</sup>, Edgar Y. Walker, Fabian H. Sinz*<br>
 ![Generic badge](https://img.shields.io/badge/2023-666666.svg)
 ![Generic badge](https://img.shields.io/badge/ICLR-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=2dQyENiU330&referrer)
+![Generic badge](https://img.shields.io/badge/InfoCog_@_NeurIPS-A000D1.svg)
+[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=iYC5hOMqUg)
 [![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/lurz_bashiri_iclr2023)
 [![Generic badge](https://img.shields.io/badge/talk-AB1E6A.svg)](https://youtu.be/uvR_2Kd82wc?si=JRO-9T2fxVeifAYX)
 ![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
