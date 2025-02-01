@@ -60,7 +60,7 @@ Category: news
         <p>May 2023</p>
     </div>
     <span>
-        Our workshop "How can Machine Learning generate insights and theories in Neuroscience" is accepted at BCCN 2023. Led by Michaela Vystrčilová and myself. It's going to take place in Berlin on the 26th and 27th of September.
+        Our workshop "How can Machine Learning generate insights and theories in Neuroscience" is accepted at BCCN 2023. Led by <a style="color: #00CBB0;text-decoration: none;" href="https://www.linkedin.com/in/m-vys/">Michaela Vystrčilová</a> and myself. It's going to take place in Berlin on the 26th and 27th of September.
     </span>
 </div>
 
