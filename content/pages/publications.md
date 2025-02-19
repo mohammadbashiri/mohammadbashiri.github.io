@@ -1,6 +1,31 @@
 Title: Selected Publications
 Category: publications
 
+**Learning and aligning single-neuron invariances in visual cortex**<br>
+*Mohammad Bashiri <sup>\*</sup>, Luca Baroni <sup>\*</sup>, Ján Antolík, Fabian H. Sinz*<br>
+![Generic badge](https://img.shields.io/badge/2025-666666.svg)
+![Generic badge](https://img.shields.io/badge/ICLR-A000D1.svg)
+[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=kbjJ9ZOakb)
+![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
+<a href="https://github.com/sinzlab/laminr">
+    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="20" viewBox="0 0 160 20" fill="none">
+    <defs>
+        <linearGradient id="badgeGradient" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="#FF00FF"/>
+        <stop offset="50%" stop-color="#00A2FF"/>
+        <stop offset="100%" stop-color="#FF00FF"/>
+        </linearGradient>
+        <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+        <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="black" flood-opacity="0.5"/>
+        </filter>
+    </defs>
+    <rect width="160" height="20" rx="4" fill="url(#badgeGradient)"/>
+    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="11" font-family="Verdana, sans-serif" font-weight="none" fill="white" filter="url(#textShadow)">
+        Python package (LAMINR)
+    </text>
+    </svg>
+</a>
+
 **Bayesian Oracle for bounding information gain in neural encoding models**<br>
 *Konstantin-Klemens Lurz <sup>\*</sup>, Mohammad Bashiri <sup>\*</sup>, Edgar Y. Walker, Fabian H. Sinz*<br>
 ![Generic badge](https://img.shields.io/badge/2023-666666.svg)
