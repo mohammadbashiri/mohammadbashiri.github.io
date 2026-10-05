@@ -1,27 +1,12 @@
 Title: Events
 Category: events
 
-**Lecture: Introduction to Machine Learning**<br>
-*MPI for Evolitionary Anthropology, Leipzig*<br>
-![Generic badge](https://img.shields.io/badge/Aug_2024-666666.svg)
-![Generic badge](https://img.shields.io/badge/Role-Invited_speaker-119C72.svg)
+<div class="small-entry"><span class="entry-date">Aug 2024</span><div><h4>Introduction to Machine Learning</h4><p>Invited lecture · MPI for Evolutionary Anthropology, Leipzig</p></div></div>
 
-**MLCoLearn Meet-Up (recurring): Collaboratively exploring applications of ML in Neuro research**<br>
-*iBehave, Bonn*<br>
-![Generic badge](https://img.shields.io/badge/Feb_2024-666666.svg)
-![Generic badge](https://img.shields.io/badge/Role-Organizer-EB4678.svg)
+<div class="small-entry"><span class="entry-date">Feb 2024</span><div><h4>MLCoLearn Meet-Up</h4><p>Organizer · Collaborative ML in neuroscience, iBehave, Bonn</p></div></div>
 
-**Workshop: "How can Machine Learning be used to generate insights and theories in Neuroscience"**<br>
-*Bernstein Conference 2023, Berlin*<br>
-![Generic badge](https://img.shields.io/badge/Sep_2023-666666.svg)
-![Generic badge](https://img.shields.io/badge/Role-Organizer-EB4678.svg)
+<div class="small-entry"><span class="entry-date">Sep 2023</span><div><h4>How can machine learning generate insights and theories in neuroscience?</h4><p>Workshop organizer · Bernstein Conference, Berlin</p></div></div>
 
-**<a style="color: #00CBB0;text-decoration: none;" href="https://breathingminds.in/">Breathing Minds</a> guest expert session: "Brain: Myths, Facts, and Careers"**<br>
-*Online*<br>
-![Generic badge](https://img.shields.io/badge/July_2022-666666.svg)
-![Generic badge](https://img.shields.io/badge/Role-Invited_speaker-119C72.svg)
+<div class="small-entry"><span class="entry-date">Jul 2022</span><div><h4><a href="https://breathingminds.in/">Brain: Myths, Facts, and Careers ↗</a></h4><p>Guest expert · Breathing Minds, online</p></div></div>
 
-**Workshop: "Bridging the Technological Gap"**<br>
-*German Primate Center, Göttingen*<br>
-![Generic badge](https://img.shields.io/badge/Aug_2022-666666.svg)
-![Generic badge](https://img.shields.io/badge/Role-Invited_speaker-119C72.svg)
+<div class="small-entry"><span class="entry-date">Aug 2022</span><div><h4>Bridging the Technological Gap</h4><p>Invited speaker · German Primate Center, Göttingen</p></div></div>
