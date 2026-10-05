@@ -1,90 +1,56 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="/theme/css/main.css">
-    <link rel="icon" type="image/x-icon" href="/static/images/website.ico">
-    <script>
-        // Function to toggle dark mode
-        function toggleDarkMode() {
-            const body = document.body;
-            const image = document.querySelector("#main img");
-            const news = document.getElementById("news");
-            const emailIcon = document.getElementById("email-icon");
-            const githubIcon = document.getElementById("github-icon");
-            const twitterIcon = document.getElementById("twitter-icon");
-            const darkModeIcon = document.getElementById("dark-mode-icon");
-
-            body.classList.toggle("dark-mode");
-            image.classList.toggle("dark-mode");
-            
-            
-            const darkModeEnabled = body.classList.contains("dark-mode");
-            
-            // Set opacity to 0 before changing source
-            emailIcon.style.opacity = 0;
-            githubIcon.style.opacity = 0;
-            twitterIcon.style.opacity = 0;
-            darkModeIcon.style.opacity = 0;
-    
-            // Change source and then set opacity back to 1
-            setTimeout(() => {
-                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
-                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
-                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
-                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
-
-                emailIcon.style.opacity = 1;
-                githubIcon.style.opacity = 1;
-                twitterIcon.style.opacity = 1;
-                darkModeIcon.style.opacity = 1;
-            }, 150);  // 0.5 seconds, to match the transition duration
-        }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Mohammad Bashiri — scientific machine learning, applied AI, and tools for human–agent collaboration.">
+    <title>Mohammad Bashiri</title>
+    <link rel="icon" type="image/x-icon" href="https://mohammadbashiri.github.io/theme/images/website.ico">
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/main.css">
+    <script defer src="https://mohammadbashiri.github.io/theme/js/main.js"></script>
 </head>
-<body>
-    <div id="container">
-        <!-- Dark Mode Toggle Icon -->
-        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
-            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="wordmark" href="https://mohammadbashiri.github.io/#top" aria-label="Mohammad Bashiri, back to top">MB<span class="wordmark-dot">.</span></a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#work">Research</a>
+                <a href="#updates">Milestones</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle color theme">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            </button>
         </div>
-  <article>
+    </header>
+    <main id="main-content">  <article>
     <header>
       <h2>Teaching</h2>
     </header>
     
 
-    <p><strong>iBOTS Workshop: Developing Data Analysis Projects with Python, Git, and Snakemake</strong><br>
-<em>Lead Instructor</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/Feb_2024-666666.svg"></p>
-<p><strong>iBOTS Workshop: Intro to Data Analysis with Python and Pandas</strong><br>
-<em>Lead Instructor</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/Nov_2023-666666.svg"></p>
-<p><strong>Crash Course: An Introduction to Machine Learning</strong><br>
-<em>Co-instructor with Arne Nix</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/Sep_2022-666666.svg">
-<a href="https://youtube.com/playlist?list=PLyo4bHRa2OKK_a_PdN7Dgc9VSSji8c1EO&amp;si=3stQ963mthwac-Yl"><img alt="Generic badge" src="https://img.shields.io/badge/YouTube_Playlist-E80000.svg"></a></p>
-<p><strong>Uni Course: Probabilistic Machine Learning</strong><br>
-<em>Teaching Assistant</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/Sep_2022-666666.svg"></p>
-<p><strong>Uni Seminar: Current Topics in Machine Learning</strong><br>
-<em>Student Suprevisor</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/May_2022-666666.svg"></p>
-<p><strong>Uni Course: Data Science</strong><br>
-<em>Teaching Assistant</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/Sep_2021-666666.svg"></p>
+    <div class="small-entry"><span class="entry-date">Feb 2024</span><div><h4>Developing data analysis projects with Python, Git, and Snakemake</h4><p>Lead instructor · iBOTS workshop</p></div></div>
+
+<div class="small-entry"><span class="entry-date">Nov 2023</span><div><h4>Intro to data analysis with Python and Pandas</h4><p>Lead instructor · iBOTS workshop</p></div></div>
+
+<div class="small-entry"><span class="entry-date">Sep 2022</span><div><h4><a href="https://youtube.com/playlist?list=PLyo4bHRa2OKK_a_PdN7Dgc9VSSji8c1EO&si=3stQ963mthwac-Yl">An Introduction to Machine Learning ↗</a></h4><p>Crash course · Co-instructor with Arne Nix</p></div></div>
+
+<div class="small-entry"><span class="entry-date">Sep 2022</span><div><h4>Probabilistic Machine Learning</h4><p>Teaching assistant · University course</p></div></div>
+
+<div class="small-entry"><span class="entry-date">May 2022</span><div><h4>Current Topics in Machine Learning</h4><p>Student supervisor · University seminar</p></div></div>
+
+<div class="small-entry"><span class="entry-date">Sep 2021</span><div><h4>Data Science</h4><p>Teaching assistant · University course</p></div></div>
 
   </article>
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-        <!-- <hr style="width: 94%; margin: auto;">
- -->
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-    </div>
-    <!-- Footer starts here -->
-    <footer>
-        © Copyright 2025 Mohammad Bashiri. Powered by Pelican. Hosted by GitHub Pages. Photos are my own unless stated otherwise.
+</main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>© Mohammad Bashiri · Made with care.</span>
+            <a href="mailto:mohammadbashiri93@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
     </footer>
 </body>
 </html>

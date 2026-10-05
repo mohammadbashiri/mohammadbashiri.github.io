@@ -1,135 +1,88 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="/theme/css/main.css">
-    <link rel="icon" type="image/x-icon" href="/static/images/website.ico">
-    <script>
-        // Function to toggle dark mode
-        function toggleDarkMode() {
-            const body = document.body;
-            const image = document.querySelector("#main img");
-            const news = document.getElementById("news");
-            const emailIcon = document.getElementById("email-icon");
-            const githubIcon = document.getElementById("github-icon");
-            const twitterIcon = document.getElementById("twitter-icon");
-            const darkModeIcon = document.getElementById("dark-mode-icon");
-
-            body.classList.toggle("dark-mode");
-            image.classList.toggle("dark-mode");
-            
-            
-            const darkModeEnabled = body.classList.contains("dark-mode");
-            
-            // Set opacity to 0 before changing source
-            emailIcon.style.opacity = 0;
-            githubIcon.style.opacity = 0;
-            twitterIcon.style.opacity = 0;
-            darkModeIcon.style.opacity = 0;
-    
-            // Change source and then set opacity back to 1
-            setTimeout(() => {
-                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
-                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
-                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
-                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
-
-                emailIcon.style.opacity = 1;
-                githubIcon.style.opacity = 1;
-                twitterIcon.style.opacity = 1;
-                darkModeIcon.style.opacity = 1;
-            }, 150);  // 0.5 seconds, to match the transition duration
-        }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Mohammad Bashiri — scientific machine learning, applied AI, and tools for human–agent collaboration.">
+    <title>Mohammad Bashiri</title>
+    <link rel="icon" type="image/x-icon" href="https://mohammadbashiri.github.io/theme/images/website.ico">
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/main.css">
+    <script defer src="https://mohammadbashiri.github.io/theme/js/main.js"></script>
 </head>
-<body>
-    <div id="container">
-        <!-- Dark Mode Toggle Icon -->
-        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
-            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="wordmark" href="https://mohammadbashiri.github.io/#top" aria-label="Mohammad Bashiri, back to top">MB<span class="wordmark-dot">.</span></a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#work">Research</a>
+                <a href="#updates">Milestones</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle color theme">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            </button>
         </div>
-  <article>
+    </header>
+    <main id="main-content">  <article>
     <header>
       <h2>Selected Publications</h2>
     </header>
     
 
-    <p><strong>Learning and aligning single-neuron invariances in visual cortex</strong><br>
-<em>Mohammad Bashiri <sup>*</sup>, Luca Baroni <sup>*</sup>, Ján Antolík, Fabian H. Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2025-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/ICLR-A000D1.svg">
-<a href="https://openreview.net/forum?id=kbjJ9ZOakb"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<img alt="Generic badge" src="https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg">
-<a href="https://github.com/sinzlab/laminr">
-    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="20" viewBox="0 0 160 20" fill="none">
-    <defs>
-        <linearGradient id="badgeGradient" x1="0%" y1="50%" x2="100%" y2="50%">
-        <stop offset="0%" stop-color="#FF00FF"/>
-        <stop offset="50%" stop-color="#00A2FF"/>
-        <stop offset="100%" stop-color="#FF00FF"/>
-        </linearGradient>
-        <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="black" flood-opacity="0.5"/>
-        </filter>
-    </defs>
-    <rect width="160" height="20" rx="4" fill="url(#badgeGradient)"/>
-    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="11" font-family="Verdana, sans-serif" font-weight="none" fill="white" filter="url(#textShadow)">
-        Python package (LAMINR)
-    </text>
-    </svg>
-</a></p>
-<p><strong>Bayesian Oracle for bounding information gain in neural encoding models</strong><br>
-<em>Konstantin-Klemens Lurz <sup>*</sup>, Mohammad Bashiri <sup>*</sup>, Edgar Y. Walker, Fabian H. Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2023-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/ICLR-A000D1.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/InfoCog_@_NeurIPS-A000D1.svg">
-<a href="https://openreview.net/forum?id=iYC5hOMqUg"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<a href="https://github.com/sinzlab/lurz_bashiri_iclr2023"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
-<a href="https://youtu.be/uvR_2Kd82wc?si=JRO-9T2fxVeifAYX"><img alt="Generic badge" src="https://img.shields.io/badge/talk-AB1E6A.svg"></a>
-<img alt="Generic badge" src="https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg"></p>
-<p><strong>Learning invariance manifolds of visual sensory neurons</strong><br>
-<em>Luca Baroni <sup>*</sup>, Mohammad Bashiri <sup>*</sup>, Konstantin Friedrich Willeke, Ján Antolík, Fabian H. Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2022-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/NeurReps_@_NeurIPS-A000D1.svg">
-<a href="https://openreview.net/forum?id=2dQyENiU330&amp;referrer"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<a href="https://github.com/sinzlab/cppn_for_invariances"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
-<img alt="Generic badge" src="https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg"></p>
-<p><strong>The Sensorium competition on predicting large-scale mouse primary visual cortex activity</strong><br>
-<em>Konstantin F. Willeke <sup>*</sup>, Paul G. Fahey <sup>*</sup>, Mohammad Bashiri, Laura Pede, Max F. Burg, Christoph Blessing, Santiago A. Cadena, Zhiwei Ding, Konstantin-Klemens Lurz, Kayla Ponder, Taliah Muhammad, Saumil S. Patel, Alexander S. Ecker, Andreas S. Tolias, and Fabian H. Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2022-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/NeurIPS_Competition-A000D1.svg">
-<a href="https://arxiv.org/abs/2206.08666"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<a href="https://github.com/sinzlab/sensorium"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
-<img alt="Generic badge" src="https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg"></p>
-<p><strong>A flow-based latent state generative model of neural population responses to natural images</strong><br>
-<em>Mohammad Bashiri <sup>*</sup>, Edgar Walker <sup>*</sup>, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2021-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/NeurIPS_(spotlight)-A000D1.svg">
-<a href="https://openreview.net/forum?id=1yeYYtLqq7K"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<a href="https://github.com/sinzlab/bashiri-et-al-2021"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
-<a href="https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl"><img alt="Generic badge" src="https://img.shields.io/badge/teaser-AB5F1E.svg"></a>
-<a href="https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i"><img alt="Generic badge" src="https://img.shields.io/badge/talk-AB1E6A.svg"></a>
-<img alt="Generic badge" src="https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg"></p>
-<p><strong>Generalization in data-driven models of primary visual cortex</strong><br>
-<em>Konstantin-Klemens Lurz, Mohammad Bashiri, Konstantin Willeke, Akshay Jagadish, Eric Wang, Edgar Y. Walker, Santiago A Cadena, Taliah Muhammad, Erick Cobos, Andreas S. Tolias, Alexander S Ecker, Fabian H. Sinz</em><br>
-<img alt="Generic badge" src="https://img.shields.io/badge/2021-666666.svg">
-<img alt="Generic badge" src="https://img.shields.io/badge/ICLR_(spotlight)-A000D1.svg">
-<a href="https://openreview.net/forum?id=Tp7kI90Htd"><img alt="Generic badge" src="https://img.shields.io/badge/paper-1E6AAB.svg"></a>
-<a href="https://github.com/sinzlab/Lurz_2020_code"><img alt="Generic badge" src="https://img.shields.io/badge/code-1EAB5F.svg"></a>
-<a href="https://youtu.be/xwLMO8nVvxs?si=0reuS2M80HJIImAR"><img alt="Generic badge" src="https://img.shields.io/badge/talk-AB1E6A.svg"></a></p>
-<p>For a complete list of publications check out <a style="color: #00CBB0;text-decoration: none;" href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">my Google Scholar profile</a>.</p>
+    <article class="work-item">
+  <div class="work-meta">2025 <span>·</span> ICLR oral</div>
+  <h3><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Learning and aligning single-neuron invariances in visual cortex <span aria-hidden="true">↗</span></a></h3>
+  <p>Mohammad Bashiri*, Luca Baroni*, Ján Antolík, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Paper ↗</a><a href="https://github.com/sinzlab/laminr">LAMINR package ↗</a></div>
+</article>
+
+<article class="work-item">
+  <div class="work-meta">2023 <span>·</span> ICLR / InfoCog at NeurIPS</div>
+  <h3><a href="https://openreview.net/forum?id=iYC5hOMqUg">Bayesian Oracle for bounding information gain in neural encoding models <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin-Klemens Lurz*, Mohammad Bashiri*, Edgar Y. Walker, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=iYC5hOMqUg">Paper ↗</a><a href="https://github.com/sinzlab/lurz_bashiri_iclr2023">Code ↗</a><a href="https://youtu.be/uvR_2Kd82wc?si=JRO-9T2fxVeifAYX">Talk ↗</a></div>
+</article>
+
+<article class="work-item">
+  <div class="work-meta">2022 <span>·</span> NeurReps at NeurIPS</div>
+  <h3><a href="https://openreview.net/forum?id=2dQyENiU330&referrer">Learning invariance manifolds of visual sensory neurons <span aria-hidden="true">↗</span></a></h3>
+  <p>Luca Baroni*, Mohammad Bashiri*, Konstantin Friedrich Willeke, Ján Antolík, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=2dQyENiU330&referrer">Paper ↗</a><a href="https://github.com/sinzlab/cppn_for_invariances">Code ↗</a></div>
+</article>
+
+<article class="work-item">
+  <div class="work-meta">2022 <span>·</span> NeurIPS competition</div>
+  <h3><a href="https://arxiv.org/abs/2206.08666">The Sensorium competition on predicting large-scale mouse primary visual cortex activity <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin F. Willeke*, Paul G. Fahey*, Mohammad Bashiri, Laura Pede, Max F. Burg, Christoph Blessing, Santiago A. Cadena, Zhiwei Ding, Konstantin-Klemens Lurz, Kayla Ponder, Taliah Muhammad, Saumil S. Patel, Alexander S. Ecker, Andreas S. Tolias, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://arxiv.org/abs/2206.08666">Paper ↗</a><a href="https://github.com/sinzlab/sensorium">Code ↗</a></div>
+</article>
+
+<article class="work-item">
+  <div class="work-meta">2021 <span>·</span> NeurIPS spotlight</div>
+  <h3><a href="https://openreview.net/forum?id=1yeYYtLqq7K">A flow-based latent state generative model of neural population responses to natural images <span aria-hidden="true">↗</span></a></h3>
+  <p>Mohammad Bashiri*, Edgar Walker*, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=1yeYYtLqq7K">Paper ↗</a><a href="https://github.com/sinzlab/bashiri-et-al-2021">Code ↗</a><a href="https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl">Teaser ↗</a><a href="https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i">Talk ↗</a></div>
+</article>
+
+<article class="work-item">
+  <div class="work-meta">2021 <span>·</span> ICLR spotlight</div>
+  <h3><a href="https://openreview.net/forum?id=Tp7kI90Htd">Generalization in data-driven models of primary visual cortex <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin-Klemens Lurz, Mohammad Bashiri, Konstantin Willeke, Akshay Jagadish, Eric Wang, Edgar Y. Walker, Santiago A Cadena, Taliah Muhammad, Erick Cobos, Andreas S. Tolias, Alexander S Ecker, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=Tp7kI90Htd">Paper ↗</a><a href="https://github.com/sinzlab/Lurz_2020_code">Code ↗</a><a href="https://youtu.be/xwLMO8nVvxs?si=0reuS2M80HJIImAR">Talk ↗</a></div>
+</article>
+
+<p class="work-footnote">* Equal contribution. <a href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">See all publications on Google Scholar ↗</a></p>
 
   </article>
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-        <!-- <hr style="width: 94%; margin: auto;">
- -->
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-    </div>
-    <!-- Footer starts here -->
-    <footer>
-        © Copyright 2025 Mohammad Bashiri. Powered by Pelican. Hosted by GitHub Pages. Photos are my own unless stated otherwise.
+</main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>© Mohammad Bashiri · Made with care.</span>
+            <a href="mailto:mohammadbashiri93@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,75 +1,49 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" href="/theme/css/main.css">
-    <link rel="icon" type="image/x-icon" href="/static/images/website.ico">
-    <script>
-        // Function to toggle dark mode
-        function toggleDarkMode() {
-            const body = document.body;
-            const image = document.querySelector("#main img");
-            const news = document.getElementById("news");
-            const emailIcon = document.getElementById("email-icon");
-            const githubIcon = document.getElementById("github-icon");
-            const twitterIcon = document.getElementById("twitter-icon");
-            const darkModeIcon = document.getElementById("dark-mode-icon");
-
-            body.classList.toggle("dark-mode");
-            image.classList.toggle("dark-mode");
-            
-            
-            const darkModeEnabled = body.classList.contains("dark-mode");
-            
-            // Set opacity to 0 before changing source
-            emailIcon.style.opacity = 0;
-            githubIcon.style.opacity = 0;
-            twitterIcon.style.opacity = 0;
-            darkModeIcon.style.opacity = 0;
-    
-            // Change source and then set opacity back to 1
-            setTimeout(() => {
-                emailIcon.src = darkModeEnabled ? "/theme/images/email_icon_dark.png" : "/theme/images/email_icon_light.png";
-                githubIcon.src = darkModeEnabled ? "/theme/images/github_icon_dark.png" : "/theme/images/github_icon_light.png";
-                twitterIcon.src = darkModeEnabled ? "/theme/images/twitter_icon_dark.png" : "/theme/images/twitter_icon_light.png";
-                darkModeIcon.src = darkModeEnabled ? "/theme/images/dark_mode_icon_dark.png" : "/theme/images/dark_mode_icon_light.png";
-
-                emailIcon.style.opacity = 1;
-                githubIcon.style.opacity = 1;
-                twitterIcon.style.opacity = 1;
-                darkModeIcon.style.opacity = 1;
-            }, 150);  // 0.5 seconds, to match the transition duration
-        }
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Mohammad Bashiri — scientific machine learning, applied AI, and tools for human–agent collaboration.">
+    <title>Mohammad Bashiri</title>
+    <link rel="icon" type="image/x-icon" href="https://mohammadbashiri.github.io/theme/images/website.ico">
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/main.css">
+    <script defer src="https://mohammadbashiri.github.io/theme/js/main.js"></script>
 </head>
-<body>
-    <div id="container">
-        <!-- Dark Mode Toggle Icon -->
-        <div id="dark-mode-toggle" onclick="toggleDarkMode()">
-            <img id="dark-mode-icon" src="/theme/images/dark_mode_icon_light.png" style="width:24px;cursor:pointer;">
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="wordmark" href="https://mohammadbashiri.github.io/#top" aria-label="Mohammad Bashiri, back to top">MB<span class="wordmark-dot">.</span></a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#work">Research</a>
+                <a href="#updates">Milestones</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle color theme">
+                <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            </button>
         </div>
-  <article>
+    </header>
+    <main id="main-content">  <article>
     <header>
       <h2>Mohammad Bashiri</h2>
     </header>
     
 
-    <p>I did my PhD at the intersection of <strong>Computational Neuroscience and Machine Learning</strong>, working with <a style="color: #00CBB0;text-decoration: none;" href="https://sinzlab.org/people/fabian_sinz.html">Fabian Sinz</a>, where I used deep neural networks, latent variable models, and implicit neural representations, driving insights about functional properties of visual sensory areas.</p>
-<p>Before my PhD, I did my bachelors in Electrical and Electronics Engineering in Malaysia, and then moved to Munich to pursue my masters in Neuroengineering at TU Munich.</p>
-<p>These days, I am working on advancing data-driven medical solutions at <a style="color: #00CBB0;text-decoration: none;" href="https://noselab.com/">Noselab</a>, a medical startup pioneering a proprietary diagnostic platform to detect, assess, and classify molecular biomarkers through nasal secretion, bridging cutting-edge technology with impactful healthcare applications.</p>
-<p>📅 <strong>Wanna have a chat?</strong> Find a time slot <a style="color: #00CBB0; text-decoration: none;" href="https://tidycal.com/mohammadbashiri/short-discussion">here</a>—I'm always happy to brainstorm modeling ideas, discuss their derivation and implementation, or explore potential collaborations on modeling biological data.</p>
+    <p>I work across scientific machine learning, applied AI, and agentic systems. My PhD in computational neuroscience focused on using deep neural networks, latent variable models, and implicit neural representations to better understand the visual system.</p>
+<p>At <a href="https://noselab.com/">Noselab</a>, I work on data-driven medicine: analyzing clinical data for biomarker discovery, building reproducible analytical pipelines, and developing AI workflows that help people navigate scientific evidence and internal knowledge.</p>
+<p>Outside work, I explore how agents can make collaboration more effective without taking control away from the people using them. I like turning complex ideas into practical tools and learning from how people actually use them.</p>
+<p>Want to compare notes or work on something together? <a href="https://tidycal.com/mohammadbashiri/short-discussion">Find a time to chat</a> or <a href="mailto:mohammadbashiri93@gmail.com">send me an email</a>.</p>
 
   </article>
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-        <!-- <hr style="width: 94%; margin: auto;">
- -->
-        <hr style="width: 94%; margin: auto;">
-        <hr style="width: 94%; margin: auto;">
-    </div>
-    <!-- Footer starts here -->
-    <footer>
-        © Copyright 2025 Mohammad Bashiri. Powered by Pelican. Hosted by GitHub Pages. Photos are my own unless stated otherwise.
+</main>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>© Mohammad Bashiri · Made with care.</span>
+            <a href="mailto:mohammadbashiri93@gmail.com">Say hello <span aria-hidden="true">↗</span></a>
+        </div>
     </footer>
 </body>
 </html>
