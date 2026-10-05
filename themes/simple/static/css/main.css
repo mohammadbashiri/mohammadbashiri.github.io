@@ -1,16 +1,5 @@
 /* An editorial canvas: typography and space do the heavy lifting. */
 :root {
-    color-scheme: light;
-    --paper: #f8f7f3;
-    --surface: #eeeee8;
-    --ink: #202b29;
-    --muted: #5e6c69;
-    --line: #d9dfda;
-    --accent: #216e62;
-    --accent-soft: #e1eee7;
-    --header: rgb(248 247 243 / 88%);
-}
-:root[data-theme="dark"] {
     color-scheme: dark;
     --paper: #171e1c;
     --surface: #222c29;
@@ -20,6 +9,17 @@
     --accent: #9cdbc2;
     --accent-soft: #293d36;
     --header: rgb(23 30 28 / 88%);
+}
+:root[data-theme="light"] {
+    color-scheme: light;
+    --paper: #f8f7f3;
+    --surface: #eeeee8;
+    --ink: #202b29;
+    --muted: #5e6c69;
+    --line: #d9dfda;
+    --accent: #216e62;
+    --accent-soft: #e1eee7;
+    --header: rgb(248 247 243 / 88%);
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }

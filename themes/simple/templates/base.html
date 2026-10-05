@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
+    <meta name="color-scheme" content="dark light">
     <meta name="description" content="Mohammad Bashiri — scientific machine learning, applied AI, and tools for human–agent collaboration.">
     <title>{{ SITENAME }}</title>
     <link rel="icon" type="image/x-icon" href="{{ SITEURL }}/theme/images/website.ico">
+    <script>try { if (localStorage.getItem('theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (e) { /* use the dark default */ }</script>
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
     <script defer src="{{ SITEURL }}/theme/js/main.js"></script>
 </head>
