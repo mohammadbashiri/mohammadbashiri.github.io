@@ -1,10 +1,10 @@
 Title: Mohammad Bashiri
 Category: about
 
-I did my PhD at the intersection of **Computational Neuroscience and Machine Learning**, working with <a style="color: #00CBB0;text-decoration: none;" href="https://sinzlab.org/people/fabian_sinz.html">Fabian Sinz</a>, where I used deep neural networks, latent variable models, and implicit neural representations, driving insights about functional properties of visual sensory areas.
+I work across scientific machine learning, applied AI, and agentic systems. My PhD in computational neuroscience focused on using deep neural networks, latent variable models, and implicit neural representations to better understand the visual system.
 
-Before my PhD, I did my bachelors in Electrical and Electronics Engineering in Malaysia, and then moved to Munich to pursue my masters in Neuroengineering at TU Munich.
+At [Noselab](https://noselab.com/), I work on data-driven medicine: analyzing clinical data for biomarker discovery, building reproducible analytical pipelines, and developing AI workflows that help people navigate scientific evidence and internal knowledge.
 
-These days, I am working on advancing data-driven medical solutions at <a style="color: #00CBB0;text-decoration: none;" href="https://noselab.com/">Noselab</a>, a medical startup pioneering a proprietary diagnostic platform to detect, assess, and classify molecular biomarkers through nasal secretion, bridging cutting-edge technology with impactful healthcare applications.
+Outside work, I explore how agents can make collaboration more effective without taking control away from the people using them. I like turning complex ideas into practical tools and learning from how people actually use them.
 
-📅 **Wanna have a chat?** Find a time slot <a style="color: #00CBB0; text-decoration: none;" href="https://tidycal.com/mohammadbashiri/short-discussion">here</a>—I'm always happy to brainstorm modeling ideas, discuss their derivation and implementation, or explore potential collaborations on modeling biological data.
+Want to compare notes or work on something together? [Find a time to chat](https://tidycal.com/mohammadbashiri/short-discussion) or [send me an email](mailto:mohammadbashiri93@gmail.com).
