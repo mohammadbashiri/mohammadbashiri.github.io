@@ -121,6 +121,12 @@
         deckTarget = (deckTarget ?? Math.round(deckPosition)) + direction;
         deckVelocity = 0;
     }
+    function overActiveCard(x, y) {
+        const card = host.querySelector('.gallery-deck-card[aria-hidden="false"]');
+        if (!card) return false;
+        const rect = card.getBoundingClientRect();
+        return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+    }
     function animateDeck(now) {
         const dt = Math.min((now - lastFrame) / 1000, .033);
         lastFrame = now;
@@ -156,7 +162,8 @@
         if (deck) advanceDeck(Number(deck.dataset.deck));
     });
     host.addEventListener('wheel', event => {
-        if (variant !== 'D' || !event.target.closest('.gallery-deck') || event.ctrlKey ||
+        if (variant !== 'D' || !event.target.closest('.gallery-deck') ||
+            !overActiveCard(event.clientX, event.clientY) || event.ctrlKey ||
             Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
         if (!event.deltaY) return;
         event.preventDefault();
@@ -171,7 +178,9 @@
         event.preventDefault();
     });
     host.addEventListener('touchstart', event => {
-        if (variant === 'D' && event.target.closest('.gallery-deck')) touchStartY = event.touches[0].clientY;
+        const touch = event.touches[0];
+        if (variant === 'D' && event.target.closest('.gallery-deck') &&
+            overActiveCard(touch.clientX, touch.clientY)) touchStartY = touch.clientY;
     }, { passive: true });
     host.addEventListener('touchmove', event => {
         if (touchStartY === null || variant !== 'D') return;
