@@ -106,7 +106,7 @@
             let depth = (index - deckPosition % projects.length + projects.length) % projects.length;
             if (depth > projects.length - 1) depth -= projects.length;
             const past = depth < 0;
-            element.style.zIndex = String(past ? (depth > -.5 ? 6 : 0) : Math.round(5 - depth));
+            element.style.zIndex = String(past ? 6 : Math.round(5 - depth));
             element.style.opacity = String(past ? Math.max(0, 1 + depth) : Math.max(0, Math.min(1, 3 - depth)));
             element.style.transform = past
                 ? `translate(${depth * 64}px, ${-depth * 20}px) rotate(${depth * 4}deg) scale(${1 + depth * .06})`

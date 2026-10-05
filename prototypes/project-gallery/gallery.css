@@ -33,8 +33,8 @@
 .gallery-index button { display: grid; grid-template-columns: 2rem 1fr auto; gap: .7rem; align-items: center; text-align: left; width: 100%; padding: .8rem .35rem; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; font-weight: 600; }
 .gallery-index button[aria-pressed="true"] { color: var(--accent); }
 .gallery-index button span { color: var(--muted); font-size: .76rem; font-weight: 500; }
-.gallery-deck { position: relative; height: 420px; overflow: clip; outline-offset: 8px; touch-action: none; }
-.gallery-deck-card { position: absolute; top: 38px; left: 0; width: min(460px, calc(100% - 44px)); min-height: 345px; box-shadow: 0 14px 28px rgb(0 0 0 / 14%); will-change: transform, opacity; }
+.gallery-deck { position: relative; width: calc(100% + 96px); height: 420px; margin-left: -96px; overflow: clip; outline-offset: 8px; touch-action: none; }
+.gallery-deck-card { position: absolute; top: 38px; left: 96px; width: min(460px, calc(100% - 140px)); min-height: 345px; box-shadow: 0 14px 28px rgb(0 0 0 / 14%); will-change: transform, opacity; }
 .gallery-deck-controls { display: flex; align-items: center; justify-content: space-between; max-width: 505px; margin-top: .7rem; color: var(--muted); font-size: .78rem; }
 .gallery-deck-controls > div { display: flex; gap: .4rem; }
 .gallery-deck-controls button { width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1rem; cursor: pointer; }
