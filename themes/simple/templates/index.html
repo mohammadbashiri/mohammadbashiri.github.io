@@ -3,13 +3,13 @@
 <section class="hero shell" aria-labelledby="hero-title">
     <div class="hero-copy">
         <p class="eyebrow">Machine learning · Applied AI · Agentic tools</p>
-        <h1 id="hero-title">Hi, I'm Mohammad<span class="accent">.</span></h1>
+        <h1 id="hero-title">Hi, I'm Mo<span class="accent">.</span></h1>
         <p class="hero-lead">I build intelligent systems where people and AI work well together—from scientific models to practical agent tools.</p>
         <div class="hero-paths" aria-label="Explore my work by area">
             <span>Explore by area</span>
-            <a href="#work">Research <span aria-hidden="true">↗</span></a>
             <a href="#applied">Applied AI <span aria-hidden="true">↗</span></a>
             <a href="#agentic">Agentic tools <span aria-hidden="true">↗</span></a>
+            <a href="#work">Research <span aria-hidden="true">↗</span></a>
         </div>
         <div class="social-links" aria-label="More from me elsewhere online">
             <span class="social-label">More from me</span>
@@ -30,22 +30,22 @@
     </div>
 </section>
 
-<section class="section shell reveal" id="work" aria-labelledby="work-title">
-    <div class="section-heading"><span class="section-index">02 / Work</span><h2 id="work-title">Selected research<span class="accent">.</span></h2><p class="section-note">Questions at the intersection of learning and the brain.</p></div>
-    <div class="section-body work-list">
-        {% for page in pages if page.category == 'publications' %}{{ page.content }}{% endfor %}
-    </div>
-</section>
-
 <section class="section shell reveal" id="projects" aria-labelledby="projects-title">
-    <div class="section-heading"><span class="section-index">03 / Projects</span><h2 id="projects-title">Applied AI<br>& tools<span class="accent">.</span></h2><p class="section-note">Work that puts ideas into people's hands.</p></div>
+    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Applied AI<br>& tools<span class="accent">.</span></h2><p class="section-note">Work that puts ideas into people's hands.</p></div>
     <div class="section-body projects-list">
         {% for page in pages if page.category == 'projects' %}{{ page.content }}{% endfor %}
     </div>
 </section>
 
+<section class="section shell reveal" id="work" aria-labelledby="work-title">
+    <div class="section-heading"><span class="section-index">03 / Research</span><h2 id="work-title">Selected research<span class="accent">.</span></h2><p class="section-note">Questions at the intersection of learning and the brain.</p></div>
+    <div class="section-body work-list">
+        {% for page in pages if page.category == 'publications' %}{{ page.content }}{% endfor %}
+    </div>
+</section>
+
 <section class="section shell reveal" id="updates" aria-labelledby="updates-title">
-    <div class="section-heading"><span class="section-index">04 / Updates</span><h2 id="updates-title">Along the way<span class="accent">.</span></h2></div>
+    <div class="section-heading"><span class="section-index">04 / Milestones</span><h2 id="updates-title">Selected milestones<span class="accent">.</span></h2><p class="section-note">Moments from research, teaching, and collaboration.</p></div>
     <div class="section-body updates-list">
         {% for page in pages if page.category == 'news' %}{{ page.content }}{% endfor %}
     </div>

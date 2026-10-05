@@ -14,9 +14,13 @@
    - Make your changes to the content files (articles, images, etc.) in the Pelican content directory.
 
 3. **Build the Site with Pelican**:
-   - Generate the static site files from your content:
+   - For a local preview, generate the static site files with relative-to-site-root asset URLs:
      ```bash
      pelican content
+     ```
+   - For deployment, build with the production URL in `publishconf.py`:
+     ```bash
+     pelican content -s publishconf.py
      ```
 
 4. **Review the Site Locally (Optional)**:
@@ -27,7 +31,7 @@
    - View your site in a web browser at `http://localhost:8000`.
 
 5. **Deploy to GitHub Pages**:
-   - Use `ghp-import` to update the `gh-pages` branch and push it to GitHub:
+   - After building with `pelican content -s publishconf.py`, use `ghp-import` to update the `gh-pages` branch and push it to GitHub:
      ```bash
      ghp-import output -b gh-pages -p
      ```

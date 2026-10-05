@@ -1,4 +1,4 @@
-Title: News
+Title: Selected Milestones
 Category: news
 
 <div class="flex">
