@@ -20,7 +20,7 @@
         {
             name: 'LAMINR', category: 'Comp neuro', context: 'Open source · Visual neuroscience',
             description: 'A Python package born from work on learning and aligning single-neuron invariances in visual cortex.',
-            href: 'https://github.com/sinzlab/laminr', link: 'View on GitHub', monogram: 'L',
+            href: 'https://github.com/sinzlab/laminr', link: 'View on GitHub', logo: 'laminr.svg',
         },
         {
             name: 'Sensorium', category: 'Comp neuro', context: 'NeurIPS competition · Visual neuroscience',
@@ -39,7 +39,7 @@
     let touchStartY = null;
 
     function logo(project) {
-        return `<span class="gallery-logo" aria-hidden="true">${project.logo
+        return `<span class="gallery-logo${project.logo === 'laminr.svg' ? ' gallery-logo-wide' : ''}" aria-hidden="true">${project.logo
             ? `<img src="${base}${project.logo}" alt="">`
             : `<span class="gallery-monogram">${project.monogram}</span>`}</span>`;
     }
