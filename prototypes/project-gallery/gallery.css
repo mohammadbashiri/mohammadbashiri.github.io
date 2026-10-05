@@ -42,6 +42,13 @@
 .gallery-variant-d .gallery-card h4 { font-size: 1.5rem; }
 .gallery-variant-d .gallery-description { font-size: .96rem; }
 .gallery-variant-d .gallery-card a { font-size: .9rem; }
+.gallery-variant-d .gallery-card,
+.gallery-variant-d .gallery-category,
+.gallery-variant-d .gallery-context,
+.gallery-variant-d .gallery-description,
+.gallery-variant-d .gallery-card a,
+.gallery-deck-controls,
+.gallery-deck-controls button { transition: background-color .3s, border-color .3s, color .3s; }
 .gallery-deck-controls { display: flex; align-items: center; justify-content: space-between; max-width: 585px; margin-top: .7rem; color: var(--muted); font-size: .78rem; }
 .gallery-deck-controls > div { display: flex; gap: .4rem; }
 .gallery-deck-controls button { width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1rem; cursor: pointer; }
