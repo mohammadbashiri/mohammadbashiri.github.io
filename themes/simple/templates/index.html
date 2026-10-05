@@ -31,8 +31,8 @@
 </section>
 
 <section class="section shell reveal" id="projects" aria-labelledby="projects-title">
-    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Applied AI<br>& tools<span class="accent">.</span></h2></div>
-    <div class="section-body projects-list">
+    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Projects<span class="accent">.</span></h2></div>
+    <div class="section-body projects-list project-deck">
         {% for page in pages if page.category == 'projects' %}{{ page.content }}{% endfor %}
     </div>
 </section>

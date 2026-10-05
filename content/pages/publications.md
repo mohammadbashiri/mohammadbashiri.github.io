@@ -5,7 +5,7 @@ Category: publications
   <div class="work-meta">2025 <span>·</span> ICLR oral</div>
   <h3><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Learning and aligning single-neuron invariances in visual cortex <span aria-hidden="true">↗</span></a></h3>
   <p>Mohammad Bashiri*, Luca Baroni*, Ján Antolík, Fabian H. Sinz</p>
-  <div class="work-links"><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Paper ↗</a><a href="https://github.com/sinzlab/laminr">LAMINR package ↗</a></div>
+  <div class="work-links"><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Paper ↗</a><a href="https://github.com/sinzlab/laminr">LAMINR package ↗</a><a href="https://youtu.be/psCQ65zjqPc?si=zOVndqevxzbfgH5G">Talk ↗</a></div>
 </article>
 
 <article class="work-item">

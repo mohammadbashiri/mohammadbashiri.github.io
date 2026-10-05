@@ -1,5 +1,7 @@
-/* Local-only project deck study — injected into the generated preview. */
-.gallery-prototype { position: relative; min-width: 0; }
+/* The cards remain a readable list if the deck enhancement is unavailable. */
+.project-deck { position: relative; min-width: 0; }
+.gallery-anchor { position: absolute; top: 0; scroll-margin-top: 7rem; }
+.gallery-deck { display: grid; gap: 1rem; }
 .gallery-card { display: flex; flex-direction: column; min-height: 345px; padding: 1.45rem; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); }
 .gallery-card-top { display: flex; justify-content: space-between; align-items: start; gap: .75rem; margin-bottom: 1.4rem; }
 .gallery-logo { display: grid; place-items: center; flex: none; width: 76px; height: 76px; border-radius: 8px; background: #25282b; color: #edf1eb; }
@@ -9,24 +11,25 @@
 .gallery-monogram { font-family: Georgia, serif; font-size: 2.5rem; line-height: 1; }
 .gallery-category { color: var(--accent); font-size: .8rem; font-weight: 650; white-space: nowrap; }
 .gallery-context { color: var(--muted); font-size: .8rem; letter-spacing: .02em; margin: 0 0 .45rem; }
-.gallery-card h4 { font-size: 1.5rem; line-height: 1.25; letter-spacing: -.03em; margin: 0 0 .7rem; }
+.gallery-card h3 { font-family: inherit; font-size: 1.5rem; font-weight: 700; line-height: 1.25; letter-spacing: -.03em; margin: 0 0 .7rem; }
 .gallery-description { color: var(--muted); font-size: .96rem; line-height: 1.6; margin: 0 0 1.2rem; }
 .gallery-card a { margin-top: auto; color: var(--accent); font-size: .9rem; font-weight: 650; text-decoration: none; }
 .gallery-card a:hover { text-decoration: underline; }
-.gallery-deck-cue { position: absolute; top: -10px; left: -88px; width: 159px; height: 90px; color: var(--accent); font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; font-size: .94rem; line-height: 1.05; transform: rotate(-10deg); pointer-events: none; user-select: none; transition: color .3s; }
+.gallery-deck-cue, .gallery-deck-controls { display: none; }
+.project-deck.is-ready .gallery-deck-cue { position: absolute; top: -10px; left: -88px; display: block; width: 159px; height: 90px; color: var(--accent); font-family: "Bradley Hand", "Segoe Print", "Comic Sans MS", cursive; font-size: .94rem; line-height: 1.05; transform: rotate(-10deg); pointer-events: none; user-select: none; transition: color .3s; }
 .gallery-deck-cue span { position: absolute; top: -22px; left: 47px; transform: rotate(-5deg); }
 .gallery-deck-cue svg { position: absolute; top: 0; left: 45px; width: 114px; height: 82px; }
-.gallery-deck { position: relative; isolation: isolate; width: min(calc(100% + 92px), 676px); height: 465px; margin-left: -96px; overflow: clip; outline-offset: 8px; }
-.gallery-deck-card { position: absolute; top: 38px; left: 96px; width: min(540px, calc(100% - 136px)); touch-action: none; min-height: 385px; padding: 1.75rem; box-shadow: 0 14px 28px rgb(0 0 0 / 14%); will-change: transform, opacity; }
+.project-deck.is-ready .gallery-deck { display: block; position: relative; isolation: isolate; width: min(calc(100% + 92px), 676px); height: 465px; margin-left: -96px; overflow: clip; outline-offset: 8px; }
+.project-deck.is-ready .gallery-deck-card { position: absolute; top: 38px; left: 96px; width: min(540px, calc(100% - 136px)); touch-action: none; min-height: 385px; padding: 1.75rem; box-shadow: 0 14px 28px rgb(0 0 0 / 14%); will-change: transform, opacity; }
 .gallery-card, .gallery-category, .gallery-context, .gallery-description, .gallery-card a,
 .gallery-deck-controls, .gallery-deck-controls button { transition: background-color .3s, border-color .3s, color .3s; }
-.gallery-deck-controls { display: flex; align-items: center; justify-content: space-between; max-width: 585px; margin-top: .7rem; color: var(--muted); font-size: .78rem; }
+.project-deck.is-ready .gallery-deck-controls { display: flex; align-items: center; justify-content: space-between; max-width: 585px; margin-top: .7rem; color: var(--muted); font-size: .78rem; }
 .gallery-deck-controls > div { display: flex; gap: .4rem; }
 .gallery-deck-controls button { width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink); font-size: 1rem; cursor: pointer; }
-@media (max-width: 1199px) { .gallery-deck-cue { display: none; } }
+@media (max-width: 1199px) { .project-deck.is-ready .gallery-deck-cue { display: none; } }
 @media (max-width: 760px) {
-    .gallery-deck { height: 420px; }
-    .gallery-deck-card { min-height: 345px; padding: 1.45rem; }
+    .project-deck.is-ready .gallery-deck { height: 420px; }
+    .project-deck.is-ready .gallery-deck-card { min-height: 345px; padding: 1.45rem; }
     .gallery-logo { width: 68px; height: 68px; }
     .gallery-logo img { width: 42px; height: 46px; }
     .gallery-logo-wide { width: 155px; }
