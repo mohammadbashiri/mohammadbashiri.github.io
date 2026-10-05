@@ -1,73 +1,46 @@
 Title: Selected Publications
 Category: publications
 
-**Learning and aligning single-neuron invariances in visual cortex**<br>
-*Mohammad Bashiri <sup>\*</sup>, Luca Baroni <sup>\*</sup>, Ján Antolík, Fabian H. Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2025-666666.svg)
-![Generic badge](https://img.shields.io/badge/ICLR-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=kbjJ9ZOakb)
-![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
-<a href="https://github.com/sinzlab/laminr">
-    <svg xmlns="http://www.w3.org/2000/svg" width="160" height="20" viewBox="0 0 160 20" fill="none">
-    <defs>
-        <linearGradient id="badgeGradient" x1="0%" y1="50%" x2="100%" y2="50%">
-        <stop offset="0%" stop-color="#FF00FF"/>
-        <stop offset="50%" stop-color="#00A2FF"/>
-        <stop offset="100%" stop-color="#FF00FF"/>
-        </linearGradient>
-        <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
-        <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="black" flood-opacity="0.5"/>
-        </filter>
-    </defs>
-    <rect width="160" height="20" rx="4" fill="url(#badgeGradient)"/>
-    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="11" font-family="Verdana, sans-serif" font-weight="none" fill="white" filter="url(#textShadow)">
-        Python package (LAMINR)
-    </text>
-    </svg>
-</a>
+<article class="work-item">
+  <div class="work-meta">2025 <span>·</span> ICLR oral</div>
+  <h3><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Learning and aligning single-neuron invariances in visual cortex <span aria-hidden="true">↗</span></a></h3>
+  <p>Mohammad Bashiri*, Luca Baroni*, Ján Antolík, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=kbjJ9ZOakb">Paper ↗</a><a href="https://github.com/sinzlab/laminr">LAMINR package ↗</a></div>
+</article>
 
-**Bayesian Oracle for bounding information gain in neural encoding models**<br>
-*Konstantin-Klemens Lurz <sup>\*</sup>, Mohammad Bashiri <sup>\*</sup>, Edgar Y. Walker, Fabian H. Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2023-666666.svg)
-![Generic badge](https://img.shields.io/badge/ICLR-A000D1.svg)
-![Generic badge](https://img.shields.io/badge/InfoCog_@_NeurIPS-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=iYC5hOMqUg)
-[![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/lurz_bashiri_iclr2023)
-[![Generic badge](https://img.shields.io/badge/talk-AB1E6A.svg)](https://youtu.be/uvR_2Kd82wc?si=JRO-9T2fxVeifAYX)
-![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
+<article class="work-item">
+  <div class="work-meta">2023 <span>·</span> ICLR / InfoCog at NeurIPS</div>
+  <h3><a href="https://openreview.net/forum?id=iYC5hOMqUg">Bayesian Oracle for bounding information gain in neural encoding models <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin-Klemens Lurz*, Mohammad Bashiri*, Edgar Y. Walker, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=iYC5hOMqUg">Paper ↗</a><a href="https://github.com/sinzlab/lurz_bashiri_iclr2023">Code ↗</a><a href="https://youtu.be/uvR_2Kd82wc?si=JRO-9T2fxVeifAYX">Talk ↗</a></div>
+</article>
 
-**Learning invariance manifolds of visual sensory neurons**<br>
-*Luca Baroni <sup>\*</sup>, Mohammad Bashiri <sup>\*</sup>, Konstantin Friedrich Willeke, Ján Antolík, Fabian H. Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2022-666666.svg)
-![Generic badge](https://img.shields.io/badge/NeurReps_@_NeurIPS-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=2dQyENiU330&referrer)
-[![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/cppn_for_invariances)
-![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
+<article class="work-item">
+  <div class="work-meta">2022 <span>·</span> NeurReps at NeurIPS</div>
+  <h3><a href="https://openreview.net/forum?id=2dQyENiU330&referrer">Learning invariance manifolds of visual sensory neurons <span aria-hidden="true">↗</span></a></h3>
+  <p>Luca Baroni*, Mohammad Bashiri*, Konstantin Friedrich Willeke, Ján Antolík, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=2dQyENiU330&referrer">Paper ↗</a><a href="https://github.com/sinzlab/cppn_for_invariances">Code ↗</a></div>
+</article>
 
-**The Sensorium competition on predicting large-scale mouse primary visual cortex activity**<br>
-*Konstantin F. Willeke <sup>\*</sup>, Paul G. Fahey <sup>\*</sup>, Mohammad Bashiri, Laura Pede, Max F. Burg, Christoph Blessing, Santiago A. Cadena, Zhiwei Ding, Konstantin-Klemens Lurz, Kayla Ponder, Taliah Muhammad, Saumil S. Patel, Alexander S. Ecker, Andreas S. Tolias, and Fabian H. Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2022-666666.svg)
-![Generic badge](https://img.shields.io/badge/NeurIPS_Competition-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://arxiv.org/abs/2206.08666)
-[![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/sensorium)
-![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
+<article class="work-item">
+  <div class="work-meta">2022 <span>·</span> NeurIPS competition</div>
+  <h3><a href="https://arxiv.org/abs/2206.08666">The Sensorium competition on predicting large-scale mouse primary visual cortex activity <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin F. Willeke*, Paul G. Fahey*, Mohammad Bashiri, Laura Pede, Max F. Burg, Christoph Blessing, Santiago A. Cadena, Zhiwei Ding, Konstantin-Klemens Lurz, Kayla Ponder, Taliah Muhammad, Saumil S. Patel, Alexander S. Ecker, Andreas S. Tolias, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://arxiv.org/abs/2206.08666">Paper ↗</a><a href="https://github.com/sinzlab/sensorium">Code ↗</a></div>
+</article>
 
-**A flow-based latent state generative model of neural population responses to natural images**<br>
-*Mohammad Bashiri <sup>\*</sup>, Edgar Walker <sup>\*</sup>, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2021-666666.svg)
-![Generic badge](https://img.shields.io/badge/NeurIPS_(spotlight)-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=1yeYYtLqq7K)
-[![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/bashiri-et-al-2021)
-[![Generic badge](https://img.shields.io/badge/teaser-AB5F1E.svg)](https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl)
-[![Generic badge](https://img.shields.io/badge/talk-AB1E6A.svg)](https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i)
-![Generic badge](https://img.shields.io/badge/*_denotes_equal_contribution-666666.svg)
+<article class="work-item">
+  <div class="work-meta">2021 <span>·</span> NeurIPS spotlight</div>
+  <h3><a href="https://openreview.net/forum?id=1yeYYtLqq7K">A flow-based latent state generative model of neural population responses to natural images <span aria-hidden="true">↗</span></a></h3>
+  <p>Mohammad Bashiri*, Edgar Walker*, Konstantin-Klemens Lurz, Akshay Jagadish, Taliah Muhammad, Zhiwei Ding, Zhuokun Ding, Andreas Tolias, Fabian Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=1yeYYtLqq7K">Paper ↗</a><a href="https://github.com/sinzlab/bashiri-et-al-2021">Code ↗</a><a href="https://youtu.be/pBkFgDrsDrc?si=s2h9_31vm9nOd4Dl">Teaser ↗</a><a href="https://youtu.be/pPLN9Y5sq0Y?si=Ewtxnk0J9orJnf7i">Talk ↗</a></div>
+</article>
 
-**Generalization in data-driven models of primary visual cortex**<br>
-*Konstantin-Klemens Lurz, Mohammad Bashiri, Konstantin Willeke, Akshay Jagadish, Eric Wang, Edgar Y. Walker, Santiago A Cadena, Taliah Muhammad, Erick Cobos, Andreas S. Tolias, Alexander S Ecker, Fabian H. Sinz*<br>
-![Generic badge](https://img.shields.io/badge/2021-666666.svg)
-![Generic badge](https://img.shields.io/badge/ICLR_(spotlight)-A000D1.svg)
-[![Generic badge](https://img.shields.io/badge/paper-1E6AAB.svg)](https://openreview.net/forum?id=Tp7kI90Htd)
-[![Generic badge](https://img.shields.io/badge/code-1EAB5F.svg)](https://github.com/sinzlab/Lurz_2020_code)
-[![Generic badge](https://img.shields.io/badge/talk-AB1E6A.svg)](https://youtu.be/xwLMO8nVvxs?si=0reuS2M80HJIImAR)
+<article class="work-item">
+  <div class="work-meta">2021 <span>·</span> ICLR spotlight</div>
+  <h3><a href="https://openreview.net/forum?id=Tp7kI90Htd">Generalization in data-driven models of primary visual cortex <span aria-hidden="true">↗</span></a></h3>
+  <p>Konstantin-Klemens Lurz, Mohammad Bashiri, Konstantin Willeke, Akshay Jagadish, Eric Wang, Edgar Y. Walker, Santiago A Cadena, Taliah Muhammad, Erick Cobos, Andreas S. Tolias, Alexander S Ecker, Fabian H. Sinz</p>
+  <div class="work-links"><a href="https://openreview.net/forum?id=Tp7kI90Htd">Paper ↗</a><a href="https://github.com/sinzlab/Lurz_2020_code">Code ↗</a><a href="https://youtu.be/xwLMO8nVvxs?si=0reuS2M80HJIImAR">Talk ↗</a></div>
+</article>
 
-For a complete list of publications check out <a style="color: #00CBB0;text-decoration: none;" href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">my Google Scholar profile</a>.
+<p class="work-footnote">* Equal contribution. <a href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">See all publications on Google Scholar ↗</a></p>

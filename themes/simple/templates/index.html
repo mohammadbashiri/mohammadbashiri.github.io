@@ -1,63 +1,68 @@
 {% extends "base.html" %}
 {% block content %}
-<div id="main">
-<div class="left">
-    <div id="header">
-        <div id="name">{{ AUTHOR }}</div>
-        <div id="social-media">
-            <a href="mailto:mohammadbashiri93@gmail.com" target="_blank"><img id="email-icon" src="{{ SITEURL }}/theme/images/email_icon_light.png"></a>
-            <a href="https://github.com/mohammadbashiri" target="_blank"><img id="github-icon" src="{{ SITEURL }}/theme/images/github_icon_light.png"></a>
-            <a href="https://twitter.com/neuralbash" target="_blank"><img id="twitter-icon" src="{{ SITEURL }}/theme/images/twitter_icon_light.png"></a>
+<section class="hero shell" aria-labelledby="hero-title">
+    <div class="hero-copy">
+        <p class="eyebrow">Machine learning · Applied AI · Agentic tools</p>
+        <h1 id="hero-title">Hi, I'm Mo<span class="accent">.</span></h1>
+        <p class="hero-lead">I build intelligent systems where people and AI work well together—from scientific models to practical agent tools.</p>
+        <div class="hero-paths" aria-label="Explore my work by area">
+            <span>Explore by area</span>
+            <a href="#applied">Applied AI <span aria-hidden="true">↗</span></a>
+            <a href="#agentic">Agentic tools <span aria-hidden="true">↗</span></a>
+            <a href="#work">Research <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="social-links" aria-label="More from me elsewhere online">
+            <span class="social-label">More from me</span>
+            <a href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/mohammadbashiri">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://twitter.com/neuralbash">X / Twitter <span aria-hidden="true">↗</span></a>
         </div>
     </div>
-<!-- <p>Here is some dummy text to act as a placeholder for your description.</p> -->
-<div id="about">
-    {% for page in pages if page.category == 'about' %}
-        <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
-{{ content }}
-</div>
-<div class="right"><img src="{{ SITEURL }}/theme/images/my_picture.jpg"></div>
-</div>
-{% endblock %}
-{% block news %}
-<div id="news">
-    {% for page in pages if page.category == 'news' %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
-{% endblock %}
-{% block publications %}
-<div id="publications">
-    {% for page in pages if page.category == 'publications' %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
-{% endblock %} 
-{% block projects %}
-<div id="projects">
-    {% for page in pages if page.category == 'projects' %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
-{% endblock %}
-{% block events %}
-<div id="events">
-    {% for page in pages if page.category == 'events' %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
-{% endblock %}
-{% block teaching %}
-<div id="teaching">
-    {% for page in pages if page.category == 'teaching' %}
-    <h2>{{ page.title }}</h2>
-    <p>{{ page.content }}</p>
-    {% endfor %}
-</div>
+    <div class="hero-portrait">
+        <img src="{{ SITEURL }}/theme/images/portrait-2026.jpg" alt="Portrait of Mohammad Bashiri" width="3596" height="3596" fetchpriority="high">
+    </div>
+</section>
+
+<section class="section shell reveal" id="about" aria-labelledby="about-title">
+    <div class="section-heading"><span class="section-index">01 / About</span><h2 id="about-title">About<span class="accent">.</span></h2></div>
+    <div class="section-body prose">
+        {% for page in pages if page.category == 'about' %}{{ page.content }}{% endfor %}
+    </div>
+</section>
+
+<section class="section shell reveal" id="projects" aria-labelledby="projects-title">
+    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Applied AI<br>& tools<span class="accent">.</span></h2></div>
+    <div class="section-body projects-list">
+        {% for page in pages if page.category == 'projects' %}{{ page.content }}{% endfor %}
+    </div>
+</section>
+
+<section class="section shell reveal" id="work" aria-labelledby="work-title">
+    <div class="section-heading"><span class="section-index">03 / Research</span><h2 id="work-title">Selected research<span class="accent">.</span></h2></div>
+    <div class="section-body work-list">
+        {% for page in pages if page.category == 'publications' %}{{ page.content }}{% endfor %}
+    </div>
+</section>
+
+<section class="section shell reveal" id="updates" aria-labelledby="updates-title">
+    <div class="section-heading"><span class="section-index">04 / Timeline</span><h2 id="updates-title">Timeline<span class="accent">.</span></h2></div>
+    <div class="section-body updates-list">
+        {% for page in pages if page.category == 'news' %}{{ page.content }}{% endfor %}
+    </div>
+</section>
+
+<section class="section shell reveal" id="more" aria-labelledby="more-title">
+    <div class="section-heading"><span class="section-index">05 / More</span><h2 id="more-title">Sharing what<br>I learn<span class="accent">.</span></h2></div>
+    <div class="section-body">
+        <div class="secondary-group">
+            <h3>Speaking & events</h3>
+            {% for page in pages if page.category == 'events' %}<div class="entry-list">{{ page.content }}</div>{% endfor %}
+        </div>
+        <div class="secondary-group">
+            <h3>Teaching</h3>
+            {% for page in pages if page.category == 'teaching' %}<div class="entry-list">{{ page.content }}</div>{% endfor %}
+        </div>
+    </div>
+</section>
+
 {% endblock %}

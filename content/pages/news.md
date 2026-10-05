@@ -1,4 +1,4 @@
-Title: News
+Title: Timeline
 Category: news
 
 <div class="flex">
