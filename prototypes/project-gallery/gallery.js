@@ -1,0 +1,223 @@
+/* THROWAWAY UI PROTOTYPE. Real project facts, four layouts, no production mutations. */
+(() => {
+    const base = '/prototype-project-gallery/';
+    const projects = [
+        {
+            name: 'Pipal', category: 'Agentic tools', context: 'Open source · Human–agent collaboration',
+            description: 'A persistent layer for Pi agents: identity, memory, topic-based sessions, messaging, and delegation between agents.',
+            href: 'https://github.com/mohammadbashiri/pipal', link: 'View on GitHub', logo: 'pipal.svg',
+        },
+        {
+            name: 'GittyGo', category: 'Agentic tools', context: 'Open source · Developer tools',
+            description: 'A local, PR-style review workflow for AI-assisted development. Comment on exact diff lines and work through feedback with an agent.',
+            href: 'https://github.com/mohammadbashiri/gittygo', link: 'View on GitHub', logo: 'gittygo.svg',
+        },
+        {
+            name: 'AI for evidence and clinical data', category: 'Applied AI', context: 'At Noselab',
+            description: 'Machine learning analyses for biomarker discovery, agentic literature workflows, and an internal assistant for exploring the team’s knowledge base.',
+            href: 'https://noselab.com/', link: 'About Noselab', monogram: 'N',
+        },
+        {
+            name: 'LAMINR', category: 'Comp neuro', context: 'Open source · Visual neuroscience',
+            description: 'A Python package born from work on learning and aligning single-neuron invariances in visual cortex.',
+            href: 'https://github.com/sinzlab/laminr', link: 'View on GitHub', monogram: 'L',
+        },
+        {
+            name: 'Sensorium', category: 'Comp neuro', context: 'NeurIPS competition · Visual neuroscience',
+            description: 'A competition on predicting large-scale mouse primary visual cortex activity.',
+            href: 'https://github.com/sinzlab/sensorium', link: 'View on GitHub', monogram: 'S',
+        },
+    ];
+    const categories = ['All', 'Comp neuro', 'Applied AI', 'Agentic tools'];
+    const labels = { A: 'Horizontal gallery', B: 'Category lanes', C: 'Featured project', D: 'Stacked scroll deck' };
+    const section = document.querySelector('#projects');
+    const host = section.querySelector('.projects-list');
+    section.querySelector('#projects-title').innerHTML = 'Projects<span class="accent">.</span>';
+    let variant = new URLSearchParams(location.search).get('variant')?.toUpperCase();
+    if (!labels[variant]) variant = 'D';
+    let filter = 'All';
+    let selected = 0;
+    let deckPosition = 0;
+    let deckVelocity = 0;
+    let deckTarget = null;
+    let lastWheel = 0;
+    let lastFrame = performance.now();
+    let touchStartY = null;
+
+    function logo(project) {
+        return `<span class="gallery-logo" aria-hidden="true">${project.logo
+            ? `<img src="${base}${project.logo}" alt="">`
+            : `<span class="gallery-monogram">${project.monogram}</span>`}</span>`;
+    }
+    function card(project, extraClass = '') {
+        return `<article class="gallery-card ${extraClass}">
+            <div class="gallery-card-top">${logo(project)}<span class="gallery-category">${project.category}</span></div>
+            <p class="gallery-context">${project.context}</p>
+            <h4>${project.name}</h4>
+            <p class="gallery-description">${project.description}</p>
+            <a href="${project.href}">${project.link} <span aria-hidden="true">↗</span></a>
+        </article>`;
+    }
+    function filters() {
+        return `<div class="gallery-filters" role="group" aria-label="Project category">
+            ${categories.map(category => `<button type="button" data-filter="${category}" aria-pressed="${filter === category}">${category}</button>`).join('')}
+        </div>`;
+    }
+    function render() {
+        host.className = `section-body projects-list gallery-prototype gallery-variant-${variant.toLowerCase()}`;
+        if (variant === 'A') {
+            const items = filter === 'All' ? projects : projects.filter(project => project.category === filter);
+            host.innerHTML = `${filters()}
+                <div class="gallery-rail-toolbar"><span>${String(items.length).padStart(2, '0')} projects</span>
+                    <div><button type="button" data-scroll="-1" aria-label="Scroll projects left">←</button>
+                    <button type="button" data-scroll="1" aria-label="Scroll projects right">→</button></div>
+                </div>
+                <div class="gallery-rail" tabindex="0" aria-label="Projects, scroll horizontally">${items.map(card).join('')}</div>`;
+        } else if (variant === 'B') {
+            host.innerHTML = categories.slice(1).map(category => `<div class="gallery-lane">
+                <div class="gallery-lane-heading"><h3>${category}</h3><span>${projects.filter(p => p.category === category).length.toString().padStart(2, '0')}</span></div>
+                <div class="gallery-rail" tabindex="0" aria-label="${category} projects, scroll horizontally">
+                    ${projects.filter(project => project.category === category).map(card).join('')}
+                </div></div>`).join('');
+        } else if (variant === 'C') {
+            const project = projects[selected];
+            host.innerHTML = `<div class="gallery-featured">
+                <div class="gallery-featured-header">${logo(project)}<span class="gallery-category">${project.category}</span></div>
+                <p class="gallery-context">${project.context}</p><h3>${project.name}</h3>
+                <p>${project.description}</p><a href="${project.href}">${project.link} ↗</a>
+            </div><div class="gallery-index" role="group" aria-label="Choose a project">
+                ${projects.map((item, index) => `<button type="button" data-select="${index}" aria-pressed="${selected === index}"><span>${String(index + 1).padStart(2, '0')}</span>${item.name}<span aria-hidden="true">↗</span></button>`).join('')}
+            </div>`;
+        } else {
+            host.innerHTML = `<div class="gallery-deck" tabindex="0" role="region" aria-label="Project card deck">
+                ${projects.map(project => card(project, 'gallery-deck-card')).join('')}
+            </div><div class="gallery-deck-controls">
+                <span class="gallery-deck-count"></span>
+                <div><button type="button" data-deck="-1" aria-label="Previous project">←</button>
+                <button type="button" data-deck="1" aria-label="Next project">→</button></div>
+            </div><p class="gallery-deck-help">Scroll over the cards: a quick flick carries them farther. Move off the deck to scroll the page.</p>`;
+            paintDeck();
+        }
+    }
+    function paintDeck() {
+        if (variant !== 'D') return;
+        const active = ((Math.round(deckPosition) % projects.length) + projects.length) % projects.length;
+        host.querySelectorAll('.gallery-deck-card').forEach((element, index) => {
+            let depth = (index - deckPosition % projects.length + projects.length) % projects.length;
+            if (depth > projects.length - 1) depth -= projects.length;
+            const past = depth < 0;
+            element.style.zIndex = String(past ? (depth > -.5 ? 6 : 0) : Math.round(5 - depth));
+            element.style.opacity = String(past ? Math.max(0, 1 + depth) : Math.max(0, Math.min(1, 3 - depth)));
+            element.style.transform = past
+                ? `translate(${depth * 64}px, ${-depth * 20}px) rotate(${depth * 4}deg) scale(${1 + depth * .06})`
+                : `translate(${depth * 20}px, ${depth * -14}px) rotate(${depth * 1.5}deg) scale(${1 - depth * .045})`;
+            element.style.pointerEvents = index === active ? 'auto' : 'none';
+            element.setAttribute('aria-hidden', String(index !== active));
+            element.querySelector('a').tabIndex = index === active ? 0 : -1;
+        });
+        host.querySelector('.gallery-deck-count').textContent = `${String(active + 1).padStart(2, '0')} / ${String(projects.length).padStart(2, '0')}`;
+    }
+    function advanceDeck(direction) {
+        deckTarget = (deckTarget ?? Math.round(deckPosition)) + direction;
+        deckVelocity = 0;
+    }
+    function animateDeck(now) {
+        const dt = Math.min((now - lastFrame) / 1000, .033);
+        lastFrame = now;
+        if (variant === 'D' && dt > 0 && (deckVelocity !== 0 || deckTarget !== null)) {
+            if (deckTarget === null) {
+                deckPosition += deckVelocity * dt;
+                deckVelocity *= Math.exp(-3.8 * dt);
+                if (now - lastWheel > 240 && Math.abs(deckVelocity) < 1.3) {
+                    deckTarget = Math.round(deckPosition + deckVelocity * .08);
+                }
+            } else {
+                deckVelocity += ((deckTarget - deckPosition) * 55 - deckVelocity * 13) * dt;
+                deckPosition += deckVelocity * dt;
+                if (Math.abs(deckTarget - deckPosition) < .002 && Math.abs(deckVelocity) < .02) {
+                    deckPosition = deckTarget;
+                    deckVelocity = 0;
+                    deckTarget = null;
+                }
+            }
+            paintDeck();
+        }
+        requestAnimationFrame(animateDeck);
+    }
+    requestAnimationFrame(animateDeck);
+    host.addEventListener('click', event => {
+        const choice = event.target.closest('[data-filter]');
+        if (choice) { filter = choice.dataset.filter; render(); return; }
+        const scroll = event.target.closest('[data-scroll]');
+        if (scroll) { host.querySelector('.gallery-rail').scrollBy({ left: Number(scroll.dataset.scroll) * 330, behavior: 'smooth' }); return; }
+        const select = event.target.closest('[data-select]');
+        if (select) { selected = Number(select.dataset.select); render(); return; }
+        const deck = event.target.closest('[data-deck]');
+        if (deck) advanceDeck(Number(deck.dataset.deck));
+    });
+    host.addEventListener('wheel', event => {
+        if (variant !== 'D' || !event.target.closest('.gallery-deck') || event.ctrlKey ||
+            Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+        if (!event.deltaY) return;
+        event.preventDefault();
+        deckTarget = null;
+        deckVelocity = Math.max(-8, Math.min(8, deckVelocity + event.deltaY * .023));
+        lastWheel = performance.now();
+    }, { passive: false });
+    host.addEventListener('keydown', event => {
+        if (variant !== 'D' || !event.target.matches('.gallery-deck') ||
+            !['ArrowDown', 'ArrowUp'].includes(event.key)) return;
+        advanceDeck(event.key === 'ArrowDown' ? 1 : -1);
+        event.preventDefault();
+    });
+    host.addEventListener('touchstart', event => {
+        if (variant === 'D' && event.target.closest('.gallery-deck')) touchStartY = event.touches[0].clientY;
+    }, { passive: true });
+    host.addEventListener('touchmove', event => {
+        if (touchStartY === null || variant !== 'D') return;
+        const difference = touchStartY - event.touches[0].clientY;
+        if (Math.abs(difference) > 20) event.preventDefault();
+    }, { passive: false });
+    host.addEventListener('touchend', event => {
+        if (touchStartY === null || variant !== 'D') return;
+        const difference = touchStartY - event.changedTouches[0].clientY;
+        if (Math.abs(difference) > 35) {
+            deckTarget = null;
+            deckVelocity = Math.max(-7, Math.min(7, difference * .023));
+            lastWheel = performance.now();
+        }
+        touchStartY = null;
+    });
+    render();
+
+    const switcher = document.createElement('div');
+    switcher.className = 'gallery-prototype-switcher';
+    switcher.innerHTML = `<button type="button" data-direction="-1" aria-label="Previous gallery variant">←</button>
+        <span></span><button type="button" data-direction="1" aria-label="Next gallery variant">→</button>`;
+    document.body.append(switcher);
+    function updateSwitcher() { switcher.querySelector('span').textContent = `Prototype ${variant} · ${labels[variant]}`; }
+    function changeVariant(direction) {
+        const keys = Object.keys(labels);
+        variant = keys[(keys.indexOf(variant) + direction + keys.length) % keys.length];
+        selected = 0;
+        deckPosition = 0;
+        deckVelocity = 0;
+        deckTarget = null;
+        const url = new URL(location.href);
+        url.searchParams.set('variant', variant);
+        history.replaceState(null, '', url);
+        render();
+        updateSwitcher();
+    }
+    switcher.addEventListener('click', event => {
+        const button = event.target.closest('[data-direction]');
+        if (button) changeVariant(Number(button.dataset.direction));
+    });
+    document.addEventListener('keydown', event => {
+        if (!['ArrowLeft', 'ArrowRight'].includes(event.key) ||
+            event.target.closest('input, textarea, [contenteditable], .gallery-prototype')) return;
+        event.preventDefault();
+        changeVariant(event.key === 'ArrowRight' ? 1 : -1);
+    });
+    updateSwitcher();
+})();
