@@ -1,7 +1,7 @@
-"""Throwaway local gallery prototype; injects assets into ignored Pelican output only.
+"""Local-only project deck; injects assets into ignored Pelican output only.
 
 Run: .venv/bin/python prototypes/project-gallery/preview.py
-View: http://localhost:8765/?variant=D (also A, B and C)
+View: http://localhost:8765/
 A normal Pelican build removes this prototype from the preview.
 """
 from pathlib import Path
@@ -35,4 +35,4 @@ html = html.replace(
     1,
 )
 index.write_text(html)
-print("Local gallery prototypes: http://localhost:8765/?variant=D (or A, B, C)")
+print("Local project deck: http://localhost:8765/")
