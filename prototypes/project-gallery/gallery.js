@@ -89,7 +89,12 @@
                 ${projects.map((item, index) => `<button type="button" data-select="${index}" aria-pressed="${selected === index}"><span>${String(index + 1).padStart(2, '0')}</span>${item.name}<span aria-hidden="true">↗</span></button>`).join('')}
             </div>`;
         } else {
-            host.innerHTML = `<div class="gallery-deck" tabindex="0" role="region" aria-label="Project card deck">
+            host.innerHTML = `<div class="gallery-deck-cue" aria-hidden="true">
+                <span>scroll through<br>projects</span>
+                <svg viewBox="0 0 114 82" fill="none" aria-hidden="true">
+                    <path d="M5 57 Q7 64 10 68 Q14 64 21 60 M10 68 C14 54 18 41 31 29 C43 18 57 16 70 15 C82 12 94 15 105 14 M95 8 Q100 11 105 14 L96 22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div><div class="gallery-deck" tabindex="0" role="region" aria-label="Project card deck">
                 ${projects.map(project => card(project, 'gallery-deck-card')).join('')}
             </div><div class="gallery-deck-controls">
                 <span class="gallery-deck-count"></span>
