@@ -95,7 +95,7 @@
                 <span class="gallery-deck-count"></span>
                 <div><button type="button" data-deck="-1" aria-label="Previous project">←</button>
                 <button type="button" data-deck="1" aria-label="Next project">→</button></div>
-            </div><p class="gallery-deck-help">Scroll over the cards: a quick flick carries them farther. Move off the deck to scroll the page.</p>`;
+            </div>`;
             paintDeck();
         }
     }
