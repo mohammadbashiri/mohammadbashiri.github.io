@@ -79,6 +79,12 @@
         const rect = card.getBoundingClientRect();
         return x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
     }
+    function sizeDeck() {
+        deck.style.height = '';
+        const minimum = deck.getBoundingClientRect().height;
+        const tallest = Math.max(...cards.map(card => card.offsetHeight));
+        deck.style.height = `${Math.max(minimum, 38 + tallest + 20)}px`;
+    }
     function syncHash() {
         const index = location.hash === '#applied' ? 2 : location.hash === '#agentic' ? 0 : null;
         if (index === null) return;
@@ -90,6 +96,8 @@
 
     host.classList.add('is-ready');
     paint();
+    sizeDeck();
+    window.addEventListener('resize', sizeDeck);
     syncHash();
     window.addEventListener('hashchange', syncHash);
     document.querySelectorAll('.hero-paths a[href="#applied"], .hero-paths a[href="#agentic"]').forEach(link => {

@@ -24,22 +24,22 @@ Category: projects
     <p class="gallery-description">A local, PR-style review workflow for AI-assisted development. Comment on exact diff lines and work through feedback with an agent.</p>
     <a href="https://github.com/mohammadbashiri/gittygo">View on GitHub <span aria-hidden="true">↗</span></a>
   </article>
-  <article class="gallery-card gallery-deck-card">
-    <div class="gallery-card-top"><span class="gallery-logo" aria-hidden="true"><span class="gallery-monogram">N</span></span><span class="gallery-category">Applied AI</span></div>
+  <article class="gallery-card gallery-deck-card gallery-card-noselab">
+    <div class="gallery-card-top"><span class="gallery-logo" aria-hidden="true"><span class="gallery-monogram">N</span></span><span class="gallery-category">Data science · <span class="gallery-category-phrase">Agentic workflows</span></span></div>
     <p class="gallery-context">At Noselab</p>
     <h3>AI for evidence and clinical data</h3>
-    <p class="gallery-description">Machine learning analyses for biomarker discovery, agentic literature workflows, and an internal assistant for exploring the team’s knowledge base.</p>
+    <p class="gallery-description">Analysis of clinical data for biomarker discovery, agentic literature workflows, and an internal assistant for exploring the team’s knowledge base.</p>
     <a href="https://noselab.com/">About Noselab <span aria-hidden="true">↗</span></a>
   </article>
-  <article class="gallery-card gallery-deck-card">
-    <div class="gallery-card-top"><span class="gallery-logo gallery-logo-wide" aria-hidden="true"><img src="/theme/images/laminr.svg" alt=""></span><span class="gallery-category">Comp neuro</span></div>
+  <article class="gallery-card gallery-deck-card gallery-card-laminr">
+    <div class="gallery-card-top"><span class="gallery-logo gallery-logo-wide" aria-hidden="true"><img src="/theme/images/laminr.svg" alt=""></span><span class="gallery-category">ML · Comp neuro</span></div>
     <p class="gallery-context">Open source · Visual neuroscience</p>
     <h3>LAMINR</h3>
     <p class="gallery-description">A Python package born from work on learning and aligning single-neuron invariances in visual cortex.</p>
     <a href="https://github.com/sinzlab/laminr">View on GitHub <span aria-hidden="true">↗</span></a>
   </article>
   <article class="gallery-card gallery-deck-card">
-    <div class="gallery-card-top"><span class="gallery-logo" aria-hidden="true"><span class="gallery-monogram">S</span></span><span class="gallery-category">Comp neuro</span></div>
+    <div class="gallery-card-top"><span class="gallery-logo" aria-hidden="true"><span class="gallery-monogram">S</span></span><span class="gallery-category">ML · Comp neuro</span></div>
     <p class="gallery-context">NeurIPS competition · Visual neuroscience</p>
     <h3>Sensorium</h3>
     <p class="gallery-description">A competition on predicting large-scale mouse primary visual cortex activity.</p>
