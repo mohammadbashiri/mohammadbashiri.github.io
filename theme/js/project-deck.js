@@ -25,7 +25,7 @@
             card.style.zIndex = String(past ? cards.length + 1 : Math.round(cards.length - depth));
             card.style.opacity = String(past ? Math.max(0, 1 + depth) : Math.max(0, Math.min(1, 3 - depth)));
             card.style.transform = past
-                ? `translate(${depth * 64}px, ${-depth * 20}px) rotate(${depth * 4}deg) scale(${1 + depth * .06})`
+                ? `translate(${depth * 24}px, ${-depth * 180}px) rotate(${depth * 4}deg) scale(${1 + depth * .02})`
                 : `translate(${depth * 20}px, ${depth * -14}px) rotate(${depth * 1.5}deg) scale(${1 - depth * .045})`;
             card.style.pointerEvents = index === active ? 'auto' : 'none';
             card.setAttribute('aria-hidden', String(index !== active));
@@ -81,9 +81,10 @@
     }
     function sizeDeck() {
         deck.style.height = '';
-        const minimum = deck.getBoundingClientRect().height;
+        cards.forEach(card => { card.style.height = ''; });
         const tallest = Math.max(...cards.map(card => card.offsetHeight));
-        deck.style.height = `${Math.max(minimum, 38 + tallest + 20)}px`;
+        cards.forEach(card => { card.style.height = `${tallest}px`; });
+        deck.style.height = `${cards[0].offsetTop + tallest + 8}px`;
     }
     function syncHash() {
         const index = location.hash === '#applied' ? 2 : location.hash === '#agentic' ? 0 : null;
@@ -98,6 +99,7 @@
     paint();
     sizeDeck();
     window.addEventListener('resize', sizeDeck);
+    document.fonts?.ready.then(sizeDeck);
     syncHash();
     window.addEventListener('hashchange', syncHash);
     document.querySelectorAll('.hero-paths a[href="#applied"], .hero-paths a[href="#agentic"]').forEach(link => {
@@ -141,7 +143,7 @@
     }, { passive: false });
     host.addEventListener('touchend', event => {
         if (touchStartY === null) return;
-        const difference = touchStartY - event.changedTouches[0].clientY;
+        const difference = event.changedTouches[0].clientY - touchStartY;
         if (Math.abs(difference) > 35) {
             if (reducedMotion.matches) advance(Math.sign(difference));
             else {

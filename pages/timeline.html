@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-field-palette="neon-blue">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,12 +8,16 @@
     <title>Mohammad Bashiri</title>
     <link rel="icon" type="image/x-icon" href="https://mohammadbashiri.github.io/theme/images/website.ico">
     <script>try { if (localStorage.getItem('theme') === 'light') document.documentElement.dataset.theme = 'light'; } catch (e) { /* use the dark default */ }</script>
-    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/main.css">
-    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/project-deck.css">
-    <script defer src="https://mohammadbashiri.github.io/theme/js/main.js"></script>
-    <script defer src="https://mohammadbashiri.github.io/theme/js/project-deck.js"></script>
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/main.css?v=302bc3a227fa">
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/project-deck.css?v=8bdc0f3f545b">
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/field-background.css?v=80c00b7c9ec6">
+    <script type="module" src="https://mohammadbashiri.github.io/theme/js/field-background.js?v=13b1da2ed76a"></script>
+    <script defer src="https://mohammadbashiri.github.io/theme/js/main.js?v=21f9261c20c4"></script>
+    <link rel="stylesheet" href="https://mohammadbashiri.github.io/theme/css/project-gallery.css?v=e498f2cff0dd">
+    <script defer src="https://mohammadbashiri.github.io/theme/js/project-gallery.js?v=f1b1854e98d2"></script>
 </head>
 <body id="top">
+    <canvas id="living-field" aria-hidden="true" data-engine-version="5114df2c6750"></canvas>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
         <div class="shell header-inner">
@@ -24,6 +28,10 @@
                 <a href="#work">Research</a>
                 <a href="#updates">Timeline</a>
             </nav>
+            <button id="field-toggle" type="button" hidden aria-label="Pause and dim background" title="Pause and dim background" aria-pressed="true">
+                <svg class="field-pause-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6v12M15 6v12"/></svg>
+                <svg class="field-play-icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M9 5.5v13l10-6.5z"/></svg>
+            </button>
             <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle color theme">
                 <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
             </button>
@@ -35,7 +43,7 @@
     </header>
     
 
-    <div class="flex">
+<div class="flex">
     <div class="date_box">
         <p>Feb 2025</p>
     </div>
@@ -151,7 +159,6 @@
         Our Sensorium competition "on predicting large-scale mouse primary visual cortex activity" got accepted at NeurIPS 2022. Co-organized with Konstantin Willeke and many other colleagues.
     </span>
 </div> -->
-
   </article>
 </main>
     <footer class="site-footer">
