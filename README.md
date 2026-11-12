@@ -1,3 +1,12 @@
+### Appearance
+
+The living background runs locally in the visitor's browser with WebGL 2. The header
+control pauses and dims it; reduced-motion preferences start it paused, and browsers
+without WebGL retain the readable dark layout.
+
+Set `FIELD_PALETTE` in `pelicanconf.py` to `'neon-blue'` (current default) or `'mint'`
+(Original mint), then rebuild. Both themes are retained without a visitor-facing picker.
+
 ### Step-by-Step Instructions to update the website
 
 1. **Create or Update Conda Environment**:

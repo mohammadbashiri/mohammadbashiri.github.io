@@ -4,23 +4,18 @@
     <div class="hero-copy">
         <p class="eyebrow">Machine learning · Comp neuro · Applied AI</p>
         <h1 id="hero-title">Hi, I'm Mo<span class="accent">.</span></h1>
-        <p class="hero-lead">I build intelligent systems where people and AI work well together—from scientific models to practical agent tools.</p>
-        <div class="hero-paths" aria-label="Explore my work by area">
-            <span>Explore by area</span>
-            <a href="#applied">Applied AI <span aria-hidden="true">↗</span></a>
-            <a href="#agentic">Agentic tools <span aria-hidden="true">↗</span></a>
-            <a href="#work">Research <span aria-hidden="true">↗</span></a>
-        </div>
+        <p class="hero-lead">I develop machine-learning models and figure out how to make AI agents work with me, with each other, for me, and everything in between.</p>
+        <p class="hero-lead hero-summary">Some of my work is research. Some becomes tools. And some is just for fun.</p>
         <div class="social-links" aria-label="More from me elsewhere online">
-            <span class="social-label">More from me</span>
             <a href="https://scholar.google.de/citations?user=sKL6qCEAAAAJ&hl=en">Google Scholar <span aria-hidden="true">↗</span></a>
             <a href="https://github.com/mohammadbashiri">GitHub <span aria-hidden="true">↗</span></a>
             <a href="https://twitter.com/neuralbash">X / Twitter <span aria-hidden="true">↗</span></a>
+            <a href="mailto:mohammadbashiri93@gmail.com">Email <span aria-hidden="true">↗</span></a>
         </div>
     </div>
-    <div class="hero-portrait">
-        <img src="{{ SITEURL }}/theme/images/portrait-2026.jpg" alt="Portrait of Mohammad Bashiri" width="3596" height="3596" fetchpriority="high">
-    </div>
+    <button class="hero-portrait" type="button" aria-label="Hold to reveal portrait" aria-pressed="false">
+        <img src="{{ SITEURL }}/theme/images/portrait-2026.jpg" alt="Portrait of Mohammad Bashiri" draggable="false" width="3596" height="3596" fetchpriority="high">
+    </button>
 </section>
 
 <section class="section shell reveal" id="about" aria-labelledby="about-title">
@@ -31,7 +26,7 @@
 </section>
 
 <section class="section shell reveal" id="projects" aria-labelledby="projects-title">
-    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Projects<span class="accent">.</span></h2></div>
+    <div class="section-heading"><span class="section-index">02 / Projects</span><h2 id="projects-title">Selected projects<span class="accent">.</span></h2></div>
     <div class="section-body projects-list project-deck">
         {% for page in pages if page.category == 'projects' %}{{ page.content }}{% endfor %}
     </div>
@@ -52,7 +47,7 @@
 </section>
 
 <section class="section shell reveal" id="more" aria-labelledby="more-title">
-    <div class="section-heading"><span class="section-index">05 / More</span><h2 id="more-title">Sharing what<br>I learn<span class="accent">.</span></h2></div>
+    <div class="section-heading"><span class="section-index">05 / More</span><h2 id="more-title">Sharing what <br>I learn<span class="accent">.</span></h2></div>
     <div class="section-body">
         <div class="secondary-group">
             <h3>Speaking & events</h3>

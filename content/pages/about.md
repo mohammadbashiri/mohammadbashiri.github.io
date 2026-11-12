@@ -1,10 +1,8 @@
 Title: Mohammad Bashiri
 Category: about
 
-I work across scientific machine learning, applied AI, and agentic systems. During my PhD, I focused on the application of machine learning in computational neuroscience, using deep neural networks, latent variable models, and implicit neural representations to better understand the visual system.
+My background is in machine learning and computational neuroscience (NeuroAI). I got my PhD at the University of Tübingen as part of the International Max Planck Research School for Intelligent Systems (IMPRS-IS). My research focused on visual neurons—their selectivity, invariances, and how their responses depend on brain state and behavior—using deep neural networks, latent variable models, and implicit neural representations.
 
-At [Noselab](https://noselab.com/), I work on data-driven medicine: analyzing clinical data for biomarker discovery, building reproducible analytical pipelines, and developing AI workflows that help people navigate scientific evidence and internal knowledge.
+During the day, I work on data-driven biomarker discovery: analyzing and modeling clinical and proteomics data, building reproducible analytical pipelines, and developing AI workflows and tools to make that work better and faster.
 
-Outside work, I build tools around human–AI collaboration and explore how people can work with agents and be more productive without giving up control and understanding. I like turning complex ideas into practical tools and learning from how people actually use them.
-
-Want to compare notes or work on something together? [Find a time to chat](https://tidycal.com/mohammadbashiri/short-discussion) or [send me an email](mailto:mohammadbashiri93@gmail.com).
+The rest of the time, I try to quiet the noise outside and follow the voice within.
