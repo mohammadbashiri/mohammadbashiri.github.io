@@ -36,16 +36,6 @@
         }
         footer.append(link);card.append(top,logo,title,description,footer);grid.append(card);
     });
-    const work = source.find(card=>card.classList.contains('gallery-card-noselab'));
     collection.append(grid);
-    if(work){
-        const band=document.createElement('article');band.className='collection-work';band.id='applied';
-        const label=document.createElement('p');label.className='collection-category';label.textContent='In practice / At Noselab';
-        const title=document.createElement('h3');title.textContent='AI for evidence & clinical data';
-        const body=document.createElement('p');body.textContent='Biomarker discovery, reproducible analysis, and AI workflows for navigating scientific evidence and internal knowledge.';
-        const text=document.createElement('div');text.append(label,title,body);
-        const link=work.querySelector('a').cloneNode(true);link.className='collection-work-link';
-        band.append(text,link);collection.append(band);
-    }
     host.replaceChildren(collection);host.classList.add('gallery-ready');
 })();
