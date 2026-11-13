@@ -2,7 +2,6 @@ Title: Projects
 Category: projects
 
 <span class="gallery-anchor" id="agentic" aria-hidden="true"></span>
-<span class="gallery-anchor" id="applied" aria-hidden="true"></span>
 <div class="gallery-deck-cue" aria-hidden="true">
   <span>scroll through<br>projects</span>
   <svg viewBox="0 0 114 82" fill="none" aria-hidden="true">
@@ -23,13 +22,6 @@ Category: projects
     <h3>GittyGo</h3>
     <p class="gallery-description">A local, PR-style review workflow for AI-assisted development. Comment on exact diff lines and work through feedback with an agent.</p>
     <a href="https://github.com/mohammadbashiri/gittygo">View on GitHub <span aria-hidden="true">↗</span></a>
-  </article>
-  <article class="gallery-card gallery-deck-card gallery-card-noselab">
-    <div class="gallery-card-top"><span class="gallery-logo" aria-hidden="true"><span class="gallery-monogram">N</span></span><span class="gallery-category">Data science · <span class="gallery-category-phrase">Agentic workflows</span></span></div>
-    <p class="gallery-context">At Noselab</p>
-    <h3>AI for evidence and clinical data</h3>
-    <p class="gallery-description">Analysis of clinical data for biomarker discovery, agentic literature workflows, and an internal assistant for exploring the team’s knowledge base.</p>
-    <a href="https://noselab.com/">About Noselab <span aria-hidden="true">↗</span></a>
   </article>
   <article class="gallery-card gallery-deck-card gallery-card-laminr">
     <div class="gallery-card-top"><span class="gallery-logo gallery-logo-wide" aria-hidden="true"><img src="/theme/images/laminr.svg" alt=""></span><span class="gallery-category">ML · Comp neuro</span></div>

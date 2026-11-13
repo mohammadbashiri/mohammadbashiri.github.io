@@ -5,4 +5,4 @@ My background is in machine learning and computational neuroscience (NeuroAI). I
 
 During the day, I work on data-driven biomarker discovery: analyzing and modeling clinical and proteomics data, building reproducible analytical pipelines, and developing AI workflows and tools to make that work better and faster.
 
-The rest of the time, I try to quiet the noise outside and follow the voice within.
+Rest of the time, I try to quiet the noise outside and follow the voice within.

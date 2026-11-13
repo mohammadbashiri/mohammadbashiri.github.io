@@ -33,7 +33,7 @@ Category: news
         <p>Jan 2024</p>
     </div>
     <span>
-        <a style="color: #00CBB0;text-decoration: none;" href="https://twitter.com/ArneNix">Arne Nix</a> and I are invited, for the second time, to do the Intro to ML crash course at the <a style="color: #00CBB0;text-decoration: none;" href="https://www.eva.mpg.de/de/comparative-cultural-psychology/events/2024-btg2/">Bridging the Technological Gap Workshop</a>.
+        <a style="color: #00CBB0;text-decoration: none;" href="https://twitter.com/ArneNix">Arne Nix</a> and I are invited, for the second time, to do the Intro to ML crash course at the <strong>Bridging the Technological Gap Workshop</strong>.
     </span>
 </div>
 
@@ -42,7 +42,7 @@ Category: news
         <p>Dec 2023</p>
     </div>
     <span>
-        Together with <a style="color: #00CBB0;text-decoration: none;" href="https://www.linkedin.com/in/alana-darcher">Alana Darcher</a> we are organizing <a style="color: #00CBB0;text-decoration: none;" href="https://mlcolearn.github.io/">MLCoLearn</a>, a NeuroML Meet-Up in Bonn, starting from Feb 2024.
+        Together with <a style="color: #00CBB0;text-decoration: none;" href="https://www.linkedin.com/in/alana-darcher">Alana Darcher</a> we are organizing <strong>MLCoLearn</strong>, a NeuroML Meet-Up in Bonn, starting from Feb 2024.
     </span>
 </div>
 
@@ -60,7 +60,7 @@ Category: news
         <p>July 2023</p>
     </div>
     <span>
-        Had a great time talking to a group of young minds from India, at <a style="color: #00CBB0;text-decoration: none;" href="https://breathingminds.in/">Breathing Minds</a>, about myths and facts about the brain. You can find the slides <a style="color: #00CBB0;text-decoration: none;" href="https://docs.google.com/presentation/d/12wKzW90IZwIL45gEB3KWHucS0dxLrTV4JZ10kEBZvlo/edit?usp=sharing">here</a>.
+        Had a great time talking to a group of young minds from India, at <strong>Breathing Minds</strong>, about myths and facts about the brain. You can find the slides <a style="color: #00CBB0;text-decoration: none;" href="https://docs.google.com/presentation/d/12wKzW90IZwIL45gEB3KWHucS0dxLrTV4JZ10kEBZvlo/edit?usp=sharing">here</a>.
     </span>
 </div>
 
