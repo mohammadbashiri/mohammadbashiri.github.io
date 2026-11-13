@@ -37,5 +37,7 @@
         footer.append(link);card.append(top,logo,title,description,footer);grid.append(card);
     });
     collection.append(grid);
+    const moreProjects = host.querySelector('.project-footnote');
+    if (moreProjects) collection.append(moreProjects);
     host.replaceChildren(collection);host.classList.add('gallery-ready');
 })();

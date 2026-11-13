@@ -43,3 +43,4 @@ Category: projects
   <div><button type="button" data-deck="-1" aria-label="Previous project">←</button>
     <button type="button" data-deck="1" aria-label="Next project">→</button></div>
 </div>
+<p class="work-footnote project-footnote"><a href="https://github.com/mohammadbashiri">More projects on GitHub <span aria-hidden="true">↗</span></a></p>
